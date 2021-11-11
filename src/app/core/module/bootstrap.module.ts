@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Ng2BootstrapModule } from 'ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 const modules = [
   CommonModule,
-  Ng2BootstrapModule,
+  NgbModule,
 ]
-
 
 @NgModule({
   declarations: [],

@@ -1,0 +1,27 @@
+@import 'helpers/colors';
+@import 'helpers/mixins';
+:host {
+    display: block;
+    height: 100vh;
+    .content-area {
+        height: calc(100vh - 90px);
+        overflow-y: auto;
+        @include scrollbars(0.5em, $annoor-grey);
+        scroll-behavior: smooth;
+        position: relative;
+        width: calc(100vw - 180px);
+    }
+    header {
+        background-color: $annoor-grey;
+        color: #fff;
+        height: 50px;
+        box-shadow: 1px 7px 3px rgb(157 157 157 / 30%);
+        z-index: 1;
+    }
+    aside {
+        background-color: $annoor-grey;
+        max-width: 180px;
+        color: #fff;
+        box-shadow: 1px 7px 5px rgb(0 0 0 / 58%) inset;
+    }
+}

@@ -1,1 +1,270 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/styles/main.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+html {
+  font-size: 0.85rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  // font-family: 'Lato', sans-serif !important;
+}
+body {
+  background: $body-bg;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tooltip-inner {
+  background: lighten($color: $annoor-gold, $amount: 30);
+  color: #000;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.row-break {
+  padding-top: 1em;
+}
+
+h3.page-title {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: $secondary-color;
+}
+.bold {
+  font-weight: 700;
+}
+
+.percentage-append {
+  position: relative;
+  display: block;
+  > input.form-control {
+    padding-right: 30px;
+  }
+  &::after {
+    content: "%";
+    width: 10px;
+    height: 10px;
+    color: #a6a6a6;
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    font-weight: 700;
+  }
+}
+
+.dollar-append {
+  position: relative;
+  display: block;
+  > input.form-control {
+    padding-left: 30px;
+  }
+  &::after {
+    content: "$";
+    width: 10px;
+    height: 10px;
+    color: #a6a6a6;
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    font-weight: 700;
+  }
+}
+
+.number-length {
+  position: relative;
+  display: block;
+  > input.form-control {
+    padding-right: 30px;
+  }
+  > span {
+    position: absolute;
+    right: 9px;
+    top: 6px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $annoor-grey;
+  }
+}
+
+.url{
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+/* START : Hierarchy-Level Code */
+
+// TEMPORARY CODE FOR HIERARCHY-TREE VIEW
+
+#viewHierarchyDesign {
+tree-viewport {
+    padding: 1rem 0.5rem 1rem 1.2rem;
+    //   height: auto;
+    height: calc(100vh - 232px);
+    @include scrollbars(0.5em, $annoor-grey);
+  }
+  tree-root {
+    padding: 0;
+  }
+  .map-tree {
+    div.tree-children {
+      overflow: visible;
+      &::before {
+        content: "";
+        position: absolute;
+        border-left: 1px solid;
+        height: 100%;
+        top: 0px;
+        left: 7px;
+      }
+      position: relative;
+      padding-left: 0;
+      margin-left: 16px;
+      div.tree-children:before {
+        top: -14px;
+      }
+    }
+    // padding-left: 0;
+    // margin-left: -5px;
+    tree-node {
+      > div {
+        > .node-wrapper {
+          margin-left: 24px;
+          > .node-content-wrapper {
+            margin-left: 4px;
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          border-bottom: 1px solid;
+          width: 13px;
+          margin-top: 15px;
+          left: 7px;
+        }
+        .toggle-children-wrapper.toggle-children-wrapper-collapsed {
+          &::after {
+            // content: '';
+            // display: inline-block;
+            // height: 7px;
+            // border-left: 1px solid #2b353c;
+            // position: absolute;
+            // top: 2px;
+            // left: 5px;
+          }
+        }
+        .toggle-children-wrapper {
+          .toggle-children {
+            // display: none; /*Hiding expanded-arrow for hierarchy */
+          }
+        }
+        .node-content-wrapper {
+          margin-left: 17px;
+          padding: 5px 0;
+        }
+      }
+      > div.tree-node-leaf {
+        > .node-wrapper {
+          margin-left: 0;
+        }
+      }
+    }
+    > tree-node {
+      > div {
+        &::before {
+          left: 14px;
+        }
+        > .node-wrapper {
+          > tree-node-expander {
+            > .toggle-children-wrapper {
+              left: 22px;
+            }
+          }
+        }
+      }
+    }
+
+    .child-branch {
+      .toggle-children {
+        right: 5px !important;
+      }
+    }
+  }
+
+  .tree-node-:last-child {
+    tree-node > div::before {
+      border-bottom-color: $annoor-blue;
+    }
+    .root2Class::before {
+      background-color: $annoor-blue;
+    }
+    div.tree-children::before {
+      border-left: 1px solid $annoor-blue !important;
+    }
+  }
+  .tree-node-:first-child {
+    tree-node > div::before {
+      border-bottom-color: $annoor-orange;
+    }
+    .root2Class::before {
+      background-color: $annoor-orange;
+    }
+    div.tree-children::before {
+      border-left: 1px solid $annoor-orange !important;
+    }
+  }
+  /* END: Hierarchy-Level Code */
+
+  .card.wrapper {
+    min-height: calc(100vh - 132px);
+    overflow-y: auto;
+    @include scrollbars(0.5em, $annoor-grey);
+  }
+  .table-responsive {
+    @include scrollbars(0.75em, $annoor-grey);
+    margin-bottom: 0.5rem;
+  }
+}
+
+.required:after {
+  content: " *";
+  color: red;
+}
+
+.error-feedback {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #dc3545;
+}
+
+.form-switch {
+  .form-check-input {
+    background-color: $annoor-orange;
+    vertical-align: middle;
+    width: 2.5rem;
+    margin-top: 0rem;
+    height: 1.25rem;
+    &:checked {
+      background-color: $annoor-green;
+    }
+  }
+  &.yes-no {
+    .form-check-input {
+      background-color: $annoor-gold;
+      &:checked {
+        background-color: $annoor-blue;
+        .text-warning {
+          color: $annoor-gold !important;
+        }
+      }
+    }
+  }
+}
