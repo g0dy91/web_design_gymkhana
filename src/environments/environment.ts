@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl:'https://mapapp2-api-dev.azurewebsites.net/api/',
+  //apiUrl:'https://mapapp2-qa-api.azurewebsites.net/api/',
+  //apiUrl:'https://MapApp2-HFMA-Ops-Dev.azurewebsites.net/api/',
+  authGuardEnabled:false
 };
 
 /*
@@ -13,4 +17,4 @@ export const environment = {
  * This import should be commented out in production mode because it will have a negative impact
  * on performance if an error is thrown.
  */
-// import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+// import 'zone.js/plugins/zoney-error';  // Included with Angular CLI.
