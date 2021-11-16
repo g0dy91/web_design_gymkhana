@@ -6,6 +6,6 @@ export enum ApiMethod {
   }
   
   export enum AuthEndPoints {
-    
+    ALL_STUDENTS = 'Student/GetAllStudents',
   }
   

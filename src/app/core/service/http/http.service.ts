@@ -61,7 +61,7 @@ export class HttpService {
 
   handleError(error: HttpErrorResponse, self: any) {
     if (error.status == 401) {
-      this.router.navigate(['/auth']);
+      this.router.navigate(['/login']);
       this.toasterService.show('Please login to continue.', {
         classname: 'toast-warning',
         delay: 5000,

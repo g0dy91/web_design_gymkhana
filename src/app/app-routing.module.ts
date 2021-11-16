@@ -10,7 +10,7 @@ import { TeachersInfoComponent } from './features/teachers-info/teachers-info.co
 const routes:Routes=[
   {
       path: '',
-      redirectTo: '/dashboard',
+      redirectTo: '/login',
       pathMatch: 'full',
   },
   {
@@ -18,24 +18,26 @@ const routes:Routes=[
       component: LoginComponent,
   },
   {
-    path:'dashboard',
-    component:DashboardComponent,
-  },
-  {
-    path:'reports',
-    component:ReportsComponent
-  },
-  {
-    path:'students-payment',
-    component:StudentsPaymentsComponent
-  },
-  {
-    path:'teachers-info',
-    component:TeachersInfoComponent
-  },
-  {
-    path:'layout',
-    component:LayoutComponent
+    path: '',
+    component: LayoutComponent,
+    children: [
+    {      
+      path:'dashboard',
+      component:DashboardComponent,
+    },
+    {
+      path:'reports',
+      component:ReportsComponent
+    },
+    {
+      path:'students-payment',
+      component:StudentsPaymentsComponent
+    },
+    {
+      path:'teachers-info',
+      component:TeachersInfoComponent
+    }
+  ]
   }
 ]
 
