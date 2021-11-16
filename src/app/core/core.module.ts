@@ -5,9 +5,11 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
-import { ToastComponent } from './service/toast/toast.component';
 import { BootstrapModule } from './module/bootstrap.module';
 import { SharedModule } from '../shared/shared.module';
+import { ToastsContainer } from './service/toast/toasts-container.component';
+import { LoginComponent } from './login/login.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 
 const components=[
@@ -15,7 +17,8 @@ const components=[
   FooterComponent,
   SidebarComponent,
   LayoutComponent,
-  ToastComponent,
+  ToastsContainer,
+  LoginComponent
 ]
 
 @NgModule({
@@ -24,7 +27,8 @@ const components=[
     CommonModule,
     RouterModule,
     BootstrapModule,
-    SharedModule
+    SharedModule,
+    FontAwesomeModule
   ],
   exports:components
 })
