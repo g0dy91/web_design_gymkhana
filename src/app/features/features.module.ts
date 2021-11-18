@@ -7,6 +7,8 @@ import { TeachersInfoComponent } from './teachers-info/teachers-info.component';
 import { RouterModule } from '@angular/router';
 import { BootstrapModule } from '../core/module/bootstrap.module';
 import { SharedModule } from '../shared/shared.module';
+import { AgGridModule } from 'ag-grid-angular';
+import { FormsModule } from '@angular/forms';
 
 const components=[
   DashboardComponent,
@@ -21,7 +23,9 @@ const components=[
     CommonModule,
     RouterModule,
     BootstrapModule,
-    SharedModule
+    SharedModule,
+    AgGridModule.withComponents([]),
+    FormsModule
   ],
   exports:components
 })
