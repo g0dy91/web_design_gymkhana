@@ -3,9 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './core/layout/layout.component';
 import { LoginComponent } from './core/login/login.component';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
-import { ReportsComponent } from './features/reports/reports.component';
-import { StudentsPaymentsComponent } from './features/students-payments/students-payments.component';
-import { TeachersInfoComponent } from './features/teachers-info/teachers-info.component';
 
 const routes:Routes=[
   {
@@ -24,18 +21,6 @@ const routes:Routes=[
     {      
       path:'dashboard',
       component:DashboardComponent,
-    },
-    {
-      path:'reports',
-      component:ReportsComponent
-    },
-    {
-      path:'students-payment',
-      component:StudentsPaymentsComponent
-    },
-    {
-      path:'teachers-info',
-      component:TeachersInfoComponent
     }
   ]
   }
