@@ -11,7 +11,7 @@ body {
   font-family: "Sen", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #5B657E;
+  color: #021c5c;
   overflow-x: hidden;
 }
 
@@ -35,7 +35,7 @@ button:focus,
 }
 
 a:hover {
-  color: #286ADE;
+  color: #64036d;
 }
 
 a {
@@ -165,7 +165,7 @@ p {
   z-index: 5;
   transition: all .4s ease-in-out;
   border: none;
-  background: #286ADE;
+  background: #de28de;
   overflow: hidden;
 }
 
@@ -1211,7 +1211,7 @@ p {
 .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   display: block;
   margin: 5px 0;
   position: relative;
@@ -1324,7 +1324,7 @@ p {
 }
 
 .navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
-  color: #fff;
+  color: rgb(238, 49, 245);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1364,6 +1364,7 @@ p {
 .navbar-nav .nav-item:hover .sub-menu {
   top: 100%;
   opacity: 1;
+  background-color: rgb(38, 2, 241);
   visibility: visible;
 }
 
@@ -1381,7 +1382,7 @@ p {
 
 .navbar-nav .nav-item .sub-menu {
   width: 200px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 110%;
@@ -1473,10 +1474,10 @@ p {
 }
 
 .hero-section {
-  background-image: url("../images/hero/hero-bg.svg");
-  background-position: bottom center;
+  background-image: url("../images/background/background.png");
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 50%;
 }
 
 .hero-section .hero-content {
@@ -1487,7 +1488,7 @@ p {
 .hero-section .hero-content h1 {
   font-size: 60px;
   margin-bottom: 35px;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
