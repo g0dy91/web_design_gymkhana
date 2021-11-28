@@ -4,7 +4,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule } from '@angular/router';
 import { BootstrapModule } from '../core/module/bootstrap.module';
 import { SharedModule } from '../shared/shared.module';
-import { AgGridModule } from 'ag-grid-angular';
 import { FormsModule } from '@angular/forms';
 
 const components=[
@@ -18,7 +17,6 @@ const components=[
     RouterModule,
     BootstrapModule,
     SharedModule,
-    AgGridModule.withComponents([]),
     FormsModule
   ],
   exports:components
