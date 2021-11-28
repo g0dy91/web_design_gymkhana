@@ -1156,11 +1156,11 @@ p {
 }
 
 .sticky .navbar .navbar-nav .nav-item a {
-  color: #162447;
+  color: #600b75;
 }
 
 .sticky .navbar .navbar-nav .nav-item a:hover {
-  color: #286ADE;
+  color: #600b75;
 }
 
 .sticky .navbar .navbar-nav .nav-item a::before {
@@ -1266,7 +1266,7 @@ p {
 .navbar-nav .nav-item a {
   font-size: 18px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(5, 5, 5, 0.7);
   transition: all 0.3s ease-out 0s;
   padding: 10px;
   position: relative;
@@ -1475,9 +1475,15 @@ p {
 
 .hero-section {
   background-image: url("../images/background/background.png");
+<<<<<<< HEAD
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% 50%;
+=======
+  background-position:  center;
+  // background-repeat: no-repeat;
+  background-size: cover;
+>>>>>>> ba64136d42dc74cabc3d8398e78a72711afd1ce9
 }
 
 .hero-section .hero-content {
@@ -1488,7 +1494,11 @@ p {
 .hero-section .hero-content h1 {
   font-size: 60px;
   margin-bottom: 35px;
+<<<<<<< HEAD
   color: rgb(255, 255, 255);
+=======
+  color: rgb(10, 8, 8);
+>>>>>>> ba64136d42dc74cabc3d8398e78a72711afd1ce9
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -1516,7 +1526,7 @@ p {
 }
 
 .hero-section .hero-content p {
-  color: #fff;
+  color: rgb(255, 255, 255);
   margin-bottom: 35px;
 }
 
@@ -1571,7 +1581,7 @@ p {
 }
 
 .service-section .single-service:hover {
-  background: radial-gradient(60% 70% at 15% 25%, #538bec 0%, #1058d6 100%) no-repeat 0% 50%/100% 100%;
+  background: radial-gradient(60% 70% at 15% 25%, #a809d4 0%, #ec23f3 100%) no-repeat 0% 50%/100% 100%;
 }
 
 .service-section .single-service:hover .icon svg path {
