@@ -1475,8 +1475,8 @@ p {
 
 .hero-section {
   background-image: url("../images/background/background.png");
-  background-position:  center;
-  // background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -1488,7 +1488,7 @@ p {
 .hero-section .hero-content h1 {
   font-size: 60px;
   margin-bottom: 35px;
-  color: rgb(10, 8, 8);
+  color: rgb(243, 239, 243);
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
