@@ -49,10 +49,7 @@
               "src/assets/js/bootstrap.5.0.0.alpha-2-min.js",
               "src/assets/js/count-up.min.js",
               "src/assets/js/wow.min.js",
-              "src/assets/js/main.js",
-              "node_modules/bootstrap/src/deprecated/event.js",
-              "node_modules/bootstrap/src/deprecated/ajax-event-alias.js"
-
+              "src/assets/js/main.js"
             ]
           },
           "configurations": {
