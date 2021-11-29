@@ -1548,6 +1548,9 @@ p {
 /*:::::::::::::::::::::::::::::  Navbar ends ::::::::::::::::::::::::::::::::::::::::::*/
 
 
+/*:::::::::::::::::::::::::::::  Hero section starts ::::::::::::::::::::::::::::::::::::::::::*/
+
+
 .hero-section {
   background-image: url("../images/background/background.png");
   background-position: center;
@@ -1895,6 +1898,10 @@ p {
   box-shadow: 0px 8px 23px rgba(40, 106, 222, 0.32);
 }
 
+
+/*:::::::::::::::::::::::::::::  Footer starts ::::::::::::::::::::::::::::::::::::::::::*/
+
+
 .footer {
   background-image:  url("../images/background/background.png");
 }
@@ -1942,7 +1949,7 @@ p {
   margin-bottom: 40px;
 }
 
-.footer .widget-wrapper .footer-widget .socials {
+/*.footer .widget-wrapper .footer-widget .socials {
   display: flex;
   align-items: center;
 }
@@ -1957,7 +1964,7 @@ p {
   background: rgba(255, 255, 255, 0.15);
   color: #fff;
   margin-right: 15px;
-}
+}*/
 
 .footer .widget-wrapper .footer-widget h3 {
   font-size: 25px;
@@ -1979,3 +1986,70 @@ p {
 .footer .widget-wrapper .footer-widget .links li a:hover {
   padding-left: 10px;
 }
+
+.socialcontainer{
+  display: inline-flex;
+  list-style: none;
+}
+
+.socialcontainer li{
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #7b00e0;
+  margin: 0 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialcontainer li:hover{
+  transition: background 0.001s ease 0.25s;
+  background: #7b00e0;
+
+}
+
+.socialcontainer li:before,
+
+.socialcontainer li:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  //background: red;
+  border-radius: 20px;
+  border: 0px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.socialcontainer li:hover:before{
+  border-width: 70px;
+  border-top-color: #7b00e0;
+  transition: border-top-width 0.25s ease, border-top-color 0.25s ease;
+}
+
+.socialcontainer li:hover:after{
+  border-width: 70px;
+  border-left-color: #7b00e0;
+  transition: border-left-width 0.25s ease, border-left-color 0.25s ease;
+}
+
+
+.socialcontainer li a{
+  line-height: 70px;
+  font-size: 30px;
+  color: #7b00e0;
+  z-index: 1;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.socialcontainer li:hover a{
+  color: #fff;
+
+}
+
