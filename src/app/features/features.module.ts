@@ -5,11 +5,11 @@ import { RouterModule } from '@angular/router';
 import { BootstrapModule } from '../core/module/bootstrap.module';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
-import { HexagonComponent } from './hexagon/hexagon.component';
+
 
 const components=[
   DashboardComponent,
-  HexagonComponent
+  
 ]
 
 @NgModule({
