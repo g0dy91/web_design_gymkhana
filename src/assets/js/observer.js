@@ -10,7 +10,6 @@ const sectionOneObserver = new IntersectionObserver(function(entries, sectionOne
     {
       header.classList.add("nav");
     }
-    console.log(entry.target);
   });
 }, sectionOneOptions);
 
