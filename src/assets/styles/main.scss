@@ -18,12 +18,6 @@ body {
   overflow-x: hidden;
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 a:focus,
 input:focus,
 textarea:focus,
@@ -153,66 +147,7 @@ p {
 }
 
 /*===== All Button Style =====*/
-.main-btn {
-  display: inline-block;
-  font-weight: 700;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  padding: 18px 48px;
-  font-size: 18px;
-  border-radius: 50px;
-  color: #fff;
-  cursor: pointer;
-  z-index: 5;
-  transition: all .4s ease-in-out;
-  border: none;
-  background: #de28de;
-  overflow: hidden;
-}
 
-.main-btn:hover {
-  color: #fff;
-}
-
-.border-btn {
-  border: 2px solid #286ADE;
-  color: #286ADE;
-  background: transparent;
-}
-
-.border-btn:hover {
-  color: #286ADE;
-}
-
-.border-btn.btn-hover::after {
-  background: rgba(40, 106, 222, 0.25);
-}
-
-.btn-hover {
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-hover::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.05);
-  top: 50%;
-  left: 50%;
-  padding: 50%;
-  z-index: -1;
-  transition: all 0.3s ease-out 0s;
-  transform: translate3d(-50%, -50%, 0) scale(0);
-}
-
-.btn-hover:hover::after {
-  transform: translate3d(-50%, -50%, 0) scale(1.3);
-}
 
 .scroll-top {
   width: 45px;
