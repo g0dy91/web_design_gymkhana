@@ -1561,13 +1561,29 @@ p {
 .hero-section .hero-content {
   text-align: center;
   margin-top: 180px;
+  
 }
 
 .hero-section .hero-content h1 {
   font-size: 60px;
   margin-bottom: 35px;
   color: rgb(243, 239, 243);
+  //background-image: linear-gradient(90deg, red, blue);
+  //background-clip: text;
+  //color: transparent;
+  text-shadow: 
+  0.025em 0.025em 0 white,
+  0.05em 0.05em 0 rgb(231, 130, 223),
+  //0.75em 0.75em 0 purple,
+  0.1em 0.1em 0 black;
 }
+
+.gradient-text{
+  background-image: linear-gradient(90deg, purple, black, rgb(241, 154, 237));
+  background-clip: text;
+  color: transparent;
+}
+
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero-section .hero-content h1 {
