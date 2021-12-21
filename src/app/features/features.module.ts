@@ -6,10 +6,12 @@ import { BootstrapModule } from '../core/module/bootstrap.module';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { HexagonComponent } from './hexagon/hexagon.component';
+import { TestCouncilComponent } from './test-council/test-council.component';
 
 const components=[
   DashboardComponent,
-  HexagonComponent
+  HexagonComponent,
+  TestCouncilComponent
 ]
 
 @NgModule({
