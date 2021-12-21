@@ -7,11 +7,15 @@ import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { HexagonComponent } from './hexagon/hexagon.component';
 import { TestCouncilComponent } from './test-council/test-council.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 const components=[
   DashboardComponent,
   HexagonComponent,
-  TestCouncilComponent
+  TestCouncilComponent,
+  HeaderComponent,
+  FooterComponent
 ]
 
 @NgModule({
