@@ -1,0 +1,14 @@
+<div class="layout-container d-flex flex-column align-items-stretch vh-100">
+    <header class="row">
+        <app-header></app-header>
+    </header>
+    <main class="row g-0 d-flex flex-fill flex-nowrap">
+            <div class="d-flex flex-column align-items-stretch col">
+                <div class="content-area container-fluid p-4">
+                    <router-outlet></router-outlet>
+                </div>
+                <app-footer class="mt-auto"></app-footer>
+            </div>
+
+    </main>
+</div>
