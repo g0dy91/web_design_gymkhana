@@ -25,12 +25,11 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
-    "@swimlane/ngx-datatable": "^20.0.0",
-    "ag-grid-angular": "^26.1.0",
-    "ag-grid-community": "^26.1.0",
+
     "bootstrap": "^5.1.3",
     "jquery": "^3.6.0",
     "lodash": "^4.17.21",
+    "ng-lazyload-image": "^9.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"

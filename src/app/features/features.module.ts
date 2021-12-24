@@ -10,6 +10,7 @@ import { TestCouncilComponent } from './test-council/test-council.component';
 import { LayoutComponent } from './layout/layout.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HeaderComponent } from './layout/header/header.component';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 
 const components=[
@@ -28,7 +29,8 @@ const components=[
     RouterModule,
     BootstrapModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    LazyLoadImageModule,
   ],
   exports:components
 })
