@@ -11,6 +11,12 @@ import { LayoutComponent } from './layout/layout.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { TransperancyComponent } from './transperancy/transperancy.component';
+import { OfficeBearersComponent } from './office-bearers/office-bearers.component';
+import { MessCouncilComponent } from './mess-council/mess-council.component';
+import { MediaCouncilComponent } from './media-council/media-council.component';
+import { ArchivesComponent } from './archives/archives.component';
+import { AcademicCouncilComponent } from './academic-council/academic-council.component';
 
 
 const components=[
@@ -19,7 +25,13 @@ const components=[
   TestCouncilComponent,
   LayoutComponent,
   FooterComponent,
-  HeaderComponent
+  HeaderComponent,
+  TransperancyComponent,
+  OfficeBearersComponent,
+  MessCouncilComponent,
+  MediaCouncilComponent,
+  ArchivesComponent,
+  AcademicCouncilComponent
 ]
 
 @NgModule({
