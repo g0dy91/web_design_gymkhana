@@ -9,10 +9,14 @@ import { CoreModule } from './core/core.module';
 import { BootstrapModule } from './core/module/bootstrap.module';
 import { FeaturesModule } from './features/features.module';
 import { SharedModule } from './shared/shared.module';
+import { AcademicCouncilComponent } from './features/academic-council/academic-council.component';
+import { BtechComponent } from './features/academic-council/btech/btech.component';
+import { MtechComponent } from './features/academic-council/mtech/mtech.component';
+import { PhdComponent } from './features/academic-council/phd/phd.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,AcademicCouncilComponent,BtechComponent,MtechComponent,PhdComponent
   ],
   imports: [
     BrowserModule,
