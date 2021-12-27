@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AcademicCouncilComponent } from './features/academic-council/academic-council.component';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
 import { LayoutComponent } from './features/layout/layout.component';
 import { TestCouncilComponent } from './features/test-council/test-council.component';
@@ -26,7 +27,10 @@ const routes: Routes = [
       {
         path:'transperancy',
         component:TransperancyComponent
-      }
+      },{
+        path: 'academic-council',
+        component: AcademicCouncilComponent,
+      },
     ]
   },
 ];

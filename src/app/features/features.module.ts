@@ -18,7 +18,6 @@ import { MediaCouncilComponent } from './media-council/media-council.component';
 import { ArchivesComponent } from './archives/archives.component';
 import { AcademicCouncilComponent } from './academic-council/academic-council.component';
 
-
 const components=[
   DashboardComponent,
   HexagonComponent,
