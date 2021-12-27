@@ -17,6 +17,9 @@ import { MessCouncilComponent } from './mess-council/mess-council.component';
 import { MediaCouncilComponent } from './media-council/media-council.component';
 import { ArchivesComponent } from './archives/archives.component';
 import { AcademicCouncilComponent } from './academic-council/academic-council.component';
+import { BtechComponent } from './academic-council/btech/btech.component';
+import { MtechComponent } from './academic-council/mtech/mtech.component';
+import { PhdComponent } from './academic-council/phd/phd.component';
 
 const components=[
   DashboardComponent,
@@ -30,7 +33,10 @@ const components=[
   MessCouncilComponent,
   MediaCouncilComponent,
   ArchivesComponent,
-  AcademicCouncilComponent
+  AcademicCouncilComponent,
+  BtechComponent,
+  MtechComponent,
+  PhdComponent
 ]
 
 @NgModule({
