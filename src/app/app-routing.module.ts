@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
 import { LayoutComponent } from './features/layout/layout.component';
 import { TestCouncilComponent } from './features/test-council/test-council.component';
+import { TransperancyComponent } from './features/transperancy/transperancy.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
         path: 'test-council',
         component: TestCouncilComponent,
       },
+      {
+        path:'transperancy',
+        component:TransperancyComponent
+      }
     ]
   },
 ];
