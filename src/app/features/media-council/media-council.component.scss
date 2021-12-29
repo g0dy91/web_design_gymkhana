@@ -24,19 +24,33 @@ $tab-color: #9d0cdb;
   border-radius: 0.25em;
   padding: 20px;
 }
-
-.card {
+.btn-style {
+  background-color: #600b75;
+  color: white;
+  padding: 10px 14px;
+  transition: background-color 1s;
+  border: none;
+  border-radius: none;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-style:hover {
+  background-color: #74128d;
+}
+.card1 {
   position: relative;
-  width: 350px;
-  height: 400px;
+  width: 260px;
+  height: 340px;
   background: #fff;
   overflow: hidden;
   margin: 0 auto;
   border-radius: 4px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-.card:before,
-.card:after {
+.card1:before,
+.card1:after {
   content: "";
   position: absolute;
   top: 0;
@@ -48,15 +62,15 @@ $tab-color: #9d0cdb;
   transition: 0.7s;
   z-index: -1;
 }
-.card:hover:before {
+.card1:hover:before {
   transform: rotate(20deg);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
-.card:hover:after {
+.card1:hover:after {
   transform: rotate(10deg);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
-.card .imgBx {
+.card1 .imgBx {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -67,11 +81,11 @@ $tab-color: #9d0cdb;
   z-index: 1;
 }
 
-.card:hover .imgBx {
+.card1:hover .imgBx {
   bottom: 80px;
 }
 
-.card .imgBx img {
+.card1 .imgBx img {
   position: absolute;
   top: 0;
   left: 0;
@@ -80,16 +94,16 @@ $tab-color: #9d0cdb;
   object-fit: cover;
 }
 
-.card .details {
+.card1 .details {
   position: absolute;
   left: 10px;
   right: 10px;
   bottom: 10px;
-  height: auto;
+  height: 60px;
   text-align: center;
 }
 
-.card .details h2 {
+.card1 .details h2 {
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -98,10 +112,130 @@ $tab-color: #9d0cdb;
   text-transform: uppercase;
 }
 
-.card .details h2 span {
+.card1 .details h2 span {
   font-weight: 500;
   font-size: 16px;
   color: #753bbd;
   display: block;
   margin-top: 5px;
+}
+.flip-boxes {
+  justify-content: center;
+}
+.flip-box {
+  display: flex;
+  align-content: stretch;
+  min-height: 200px;
+  flex-wrap: wrap;
+  position: relative;
+  border: 10px solid transparent;
+  padding: 0;
+  border-top: 0;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+
+  &:hover {
+    .back {
+      transform: rotateY(0deg);
+      z-index: 10;
+    }
+
+    .front {
+      transform: rotateY(180deg);
+      z-index: -1;
+    }
+  }
+
+  .back,
+  .front {
+    position: relative;
+    // background-color: #1b2d61;
+    color: #753bbd;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex: 0 0 100%;
+    -webkit-transition: all 1s cubic-bezier(0.5, 1, 0.5, 1);
+    transition: all 1s cubic-bezier(0.5, 1.3, 0.5, 1.3);
+    transform-style: preserve-3d;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .back {
+    background-color: #b741ccb9;
+    position: absolute;
+    color: white;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    transform: rotateY(-180deg);
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      border: 15px solid transparent;
+      border-bottom-color: white;
+      border-left-color: white;
+    }
+  }
+
+  .front {
+    z-index: 10;
+
+    .content {
+      font-size: 2rem;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      border: 15px solid #cecece;
+      border-bottom-color: white;
+      border-right-color: white;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    text-shadow: 0px 0px 2px black;
+  }
+}
+
+* {
+  overflow: hidden;
+}
+#mess-inspection{
+  display: none;
+}
+@media screen and (min-width:768px) {
+  .laptop{
+    display: block;
+  }
+  .phone {
+    display: none;
+  }
+}
+@media screen and (max-width:768px) {
+  .laptop{
+    display: none;
+  }
+  .phone {
+    display: block;
+  }
 }
