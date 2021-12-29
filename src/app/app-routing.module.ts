@@ -28,14 +28,16 @@ const routes: Routes = [
       {
         path:'transperancy',
         component:TransperancyComponent
-      },{
+      },
+      {
         path: 'academic-council',
         component: AcademicCouncilComponent,
       },
       {
         path: 'mess-council',
         component: MessCouncilComponent,
-      },{
+      },
+      {
         path: 'media-council',
         component: MediaCouncilComponent,
       },
