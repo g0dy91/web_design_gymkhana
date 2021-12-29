@@ -223,19 +223,3 @@ $tab-color: #9d0cdb;
 #mess-inspection{
   display: none;
 }
-@media screen and (min-width:768px) {
-  .laptop{
-    display: block;
-  }
-  .phone {
-    display: none;
-  }
-}
-@media screen and (max-width:768px) {
-  .laptop{
-    display: none;
-  }
-  .phone {
-    display: block;
-  }
-}
