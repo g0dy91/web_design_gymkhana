@@ -28,8 +28,9 @@ $tab-color: #9d0cdb;
   background-color: #600b75;
   color: white;
   padding: 10px 14px;
-  transition: background-color 1s;
+  transition: all 1s;
   border: none;
+  border: 2px solid #600b75;
   border-radius: none;
 }
 .btn:focus {
@@ -37,7 +38,8 @@ $tab-color: #9d0cdb;
   box-shadow: none;
 }
 .btn-style:hover {
-  background-color: #74128d;
+  background-color: #a841c2;
+  border:2px solid  #a841c2;
 }
 .card1 {
   position: relative;
@@ -219,9 +221,6 @@ $tab-color: #9d0cdb;
 
 * {
   overflow: hidden;
-}
-#mess-inspection{
-  display: none;
 }
 @media screen and (min-width:768px) {
   .laptop{

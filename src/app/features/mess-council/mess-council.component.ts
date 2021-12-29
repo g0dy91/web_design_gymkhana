@@ -8,8 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class MessCouncilComponent implements OnInit {
 
   constructor() { }
-
+  messInspection:Boolean=false
+  messCoordinator:Boolean=true
   ngOnInit(): void {
   }
+  coord(){
+    this.messCoordinator=true;
+    this.messInspection=false;
+  }
+  prep(){
 
+  }
+  hygene(){
+
+  }
+  inspect(){
+    this.messCoordinator=false;
+    this.messInspection=true;
+  }
 }
