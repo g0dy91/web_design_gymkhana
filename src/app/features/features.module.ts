@@ -20,6 +20,7 @@ import { AcademicCouncilComponent } from './academic-council/academic-council.co
 import { BtechComponent } from './academic-council/btech/btech.component';
 import { MtechComponent } from './academic-council/mtech/mtech.component';
 import { PhdComponent } from './academic-council/phd/phd.component';
+import { TeComponent } from './te/te.component';
 
 const components=[
   DashboardComponent,
@@ -36,7 +37,8 @@ const components=[
   AcademicCouncilComponent,
   BtechComponent,
   MtechComponent,
-  PhdComponent
+  PhdComponent,
+  TeComponent
 ]
 
 @NgModule({

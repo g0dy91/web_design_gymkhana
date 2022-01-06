@@ -7,6 +7,7 @@ import { LayoutComponent } from './features/layout/layout.component';
 import { TestCouncilComponent } from './features/test-council/test-council.component';
 import { TransperancyComponent } from './features/transperancy/transperancy.component';
 import { MediaCouncilComponent } from './features/media-council/media-council.component';
+import { TeComponent } from './features/te/te.component';
 const routes: Routes = [
   {
     path: '',
@@ -40,6 +41,10 @@ const routes: Routes = [
       {
         path: 'media-council',
         component: MediaCouncilComponent,
+      },
+      {
+        path: 'te',
+        component: TeComponent,
       },
     ]
   },
