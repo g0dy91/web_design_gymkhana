@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import "helpers/colors";
 
 // *
 // {
@@ -155,18 +154,3 @@ section::after{
 h3{
     color: black;
 }
-h6 {
-    font-weight: 700;
-    color: $annoor-blue;
-    position: relative;
-    margin-bottom: 1rem;
-    &::after {
-      content: "";
-      width: 100%;
-      height: 1px;
-      background-color: $annoor-blue;
-      display: block;
-      position: absolute;
-      bottom: -5px;
-    }
-  }

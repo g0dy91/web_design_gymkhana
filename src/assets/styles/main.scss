@@ -2045,4 +2045,19 @@ p {
   color: #fff;
 
 }
-
+@import "helpers/colors";
+h1 {
+  font-weight: 700;
+  color: $annoor-blue;
+  position: relative;
+  margin-bottom: 1rem;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $annoor-blue;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+  }
+}
