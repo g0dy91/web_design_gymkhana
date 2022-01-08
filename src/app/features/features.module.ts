@@ -38,7 +38,7 @@ const components=[
   BtechComponent,
   MtechComponent,
   PhdComponent,
-  TeComponent
+  TeComponent,
 ]
 
 @NgModule({

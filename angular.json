@@ -50,7 +50,8 @@
               "src/assets/js/count-up.min.js",
               "src/assets/js/wow.min.js",
               "src/assets/js/main.js",
-              "src/assets/js/events.js"
+              "src/assets/js/events.js",
+              "src/assets/js/office_bearers.js"
             ]
           },
           "configurations": {
