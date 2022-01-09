@@ -82,73 +82,39 @@
     </div>
   </div>
 </section>
+
 <section id="election" class="pricing-section pt-130">
-  <div class="container">
-    <div class="section-title mb-60">
-      <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Election IITH</h1>
-    </div>
-    <div class="row">
-      <div class="layout">
-        <input
-          name="nav"
-          type="radio"
-          class="nav home-radio"
-          id="home"
-          checked="checked"
-        />
-        <div class="page home-page">
-          <div class="page-contents">
-            <h1>HI</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
-              voluptates dolore id aspernatur odit minus quidem deleniti ab
-              rerum exercitationem dolores neque officiis explicabo possimus
-              blanditiis sed, voluptatem ut. Ab?
-            </p>
-            <p><label for="about">Learn more</label></p>
-          </div>
-        </div>
-        <label class="nav" for="home">
-          <span>
-            2021-2020
-          </span>
-        </label>
+  
 
-        <input name="nav" type="radio" class="about-radio" id="about" />
-        <div class="page about-page">
-          <div class="page-contents">
-            <h1>About</h1>
-            <p>
-              Amet consectetur adipisicing elit. Sed ipsam ad exercitationem,
-              quo quae ullam, quidem laudantium corporis quis minima debitis
-              nesciunt repellat. Quos dolore ex quis voluptas, minus ut?
-            </p>
-          </div>
-        </div>
-        <label class="nav" for="about">
-          <span>
-            2020-2019
-          </span>
-        </label>
+<div class="container">
 
-        <input name="nav" type="radio" class="contact-radio" id="contact" />
-        <div class="page contact-page">
-          <div class="page-contents">
-            <h1>Contact</h1>
-            <p>
-              Eaque accusamus magnam error unde nam, atque provident omnis
-              fugiat quam necessitatibus vel nulla sed quibusdam fuga veritatis
-              assumenda alias quidem asperiores?
-            </p>
-            <p><a href="#">Get in touch</a></p>
-          </div>
-        </div>
-        <label class="nav" for="contact">
-          <span>
-            2019-2018
-          </span>
-        </label>
-      </div>
+
+  <div class="tab-wrap">
+
+    <!-- active tab on page load gets checked attribute -->
+    <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+    <label for="tab1">Short</label>
+
+    <input type="radio" id="tab2" name="tabGroup1" class="tab">
+    <label for="tab2">Medium</label>
+
+    <input type="radio" id="tab3" name="tabGroup1" class="tab">
+    <label for="tab3">Long</label>
+
+    <div class="tab__content">
+     <app-team21></app-team21>
     </div>
+
+    <div class="tab__content">
+      <app-team20></app-team20>
+    </div>
+
+    <div class="tab__content">
+    
+    </div>
+
   </div>
+
+ 
+</div>
 </section>
