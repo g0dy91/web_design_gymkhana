@@ -9,6 +9,7 @@ import { CoreModule } from './core/core.module';
 import { BootstrapModule } from './core/module/bootstrap.module';
 import { FeaturesModule } from './features/features.module';
 import { SharedModule } from './shared/shared.module';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SharedModule } from './shared/shared.module';
     FormsModule,
     BootstrapModule,
     HttpClientModule,
+    LazyLoadImageModule,
 
   ],
   providers: [],
