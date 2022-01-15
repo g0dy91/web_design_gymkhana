@@ -20,7 +20,6 @@ import { AcademicCouncilComponent } from './academic-council/academic-council.co
 import { BtechComponent } from './academic-council/btech/btech.component';
 import { MtechComponent } from './academic-council/mtech/mtech.component';
 import { PhdComponent } from './academic-council/phd/phd.component';
-import { TeComponent } from './te/te.component';
 import { Team21Component } from './archives/team21/team21.component';
 import { Team20Component } from './archives/team20/team20.component';
 import { Team19Component } from './archives/team19/team19.component';
@@ -41,7 +40,6 @@ const components=[
   BtechComponent,
   MtechComponent,
   PhdComponent,
-  TeComponent,
   Team21Component,
   Team20Component,
   Team19Component
