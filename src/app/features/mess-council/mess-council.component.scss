@@ -39,7 +39,7 @@ $tab-color: #9d0cdb;
 }
 .btn-style:hover {
   background-color: #a841c2;
-  border:2px solid  #a841c2;
+  border: 2px solid #a841c2;
 }
 .card1 {
   position: relative;
@@ -113,7 +113,10 @@ $tab-color: #9d0cdb;
   color: #777;
   text-transform: uppercase;
 }
-
+.card {
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 20%), 0 0 0 0 rgb(0 0 0 / 14%),
+    0 0 0 0 rgb(0 0 0 / 12%);
+}
 .card1 .details h2 span {
   font-weight: 500;
   font-size: 16px;
@@ -124,16 +127,16 @@ $tab-color: #9d0cdb;
 * {
   overflow: hidden;
 }
-@media screen and (min-width:768px) {
-  .laptop{
+@media screen and (min-width: 768px) {
+  .laptop {
     display: block;
   }
   .phone {
     display: none;
   }
 }
-@media screen and (max-width:768px) {
-  .laptop{
+@media screen and (max-width: 768px) {
+  .laptop {
     display: none;
   }
   .phone {
