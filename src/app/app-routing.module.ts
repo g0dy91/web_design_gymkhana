@@ -9,6 +9,7 @@ import { TransperancyComponent } from './features/transperancy/transperancy.comp
 import { MediaCouncilComponent } from './features/media-council/media-council.component';
 import { ArchivesComponent } from './features/archives/archives.component';
 import { OfficeBearersComponent } from './features/office-bearers/office-bearers.component';
+import { GeneralCouncilComponent } from './features/general-council/general-council.component';
 const routes: Routes = [
   {
     path: '',
@@ -50,6 +51,10 @@ const routes: Routes = [
       {
         path: 'office-bearers',
         component: OfficeBearersComponent,
+      },
+      {
+        path:'general-council',
+        component: GeneralCouncilComponent,
       },
     ]
   },
