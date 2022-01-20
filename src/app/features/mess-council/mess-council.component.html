@@ -37,14 +37,14 @@
                <div class="about-content">
                   <div class="row my-4">
                      <div class="col-lg-9">
-                        <div class="card shadowit">
+                        <div class="card cardone shadowit z-depth-2 wow fadeInUp">
                            <div class="card-body">
                               <div class="row">
                                  <div class="col-lg-8">
                                     <h5 class="card-title pb-3">Mess Menu</h5>
                                     <p class="card-text pb-1">Please find the menu of mess.</p>
                                  </div>
-                                 <div class="col-lg-4 my-auto mx-auto">
+                                 <div class="col-lg-4 my-auto" style="display: flex;justify-content: flex-end;">
                                     <button type="button" class="btn btn-dark btn-style text-uppercase"
                                        style="border: none;letter-spacing: 2px;">View Menu</button>
                                  </div>
@@ -56,14 +56,14 @@
                   </div>
                   <div class="row my-4">
                      <div class="col-lg-9 shadowit">
-                        <div class="card">
+                        <div class="card cardone z-depth-2 wow fadeInUp">
                            <div class="card-body">
                               <div class="row">
                                  <div class="col-lg-8">
                                     <h5 class="card-title pb-3">Mess grievance form</h5>
                                     <p class="card-text pb-1">Please fill this form regarding mess complaints.</p>
                                  </div>
-                                 <div class="col-lg-4 my-auto mx-auto">
+                                 <div class="col-lg-4 my-auto mx-auto" style="display: flex;justify-content: flex-end;">
                                     <button type="button" class="btn btn-dark btn-style text-uppercase"
                                        style="border: none;letter-spacing: 2px;">Fill out</button>
                                  </div>
@@ -75,14 +75,14 @@
                   </div>
                   <div class="row my-4">
                      <div class="col-lg-9 shadowit">
-                        <div class="card">
+                        <div class="card cardone z-depth-2 wow fadeInUp">
                            <div class="card-body">
                               <div class="row">
-                                 <div class="col-lg-6">
+                                 <div class="col-lg-8">
                                     <h5 class="card-title pb-3">Dining IITH</h5>
                                     <p class="card-text pb-1">For food token</p>
                                  </div>
-                                 <div class="col-lg-4 my-auto mx-auto">
+                                 <div class="col-lg-4 my-auto mx-auto" style="display: flex;justify-content: flex-end;">
                                     <button type="button" class="btn btn-dark btn-style text-uppercase"
                                        style="border: none;letter-spacing: 2px;">Fill out</button>
                                  </div>
@@ -94,14 +94,14 @@
                   </div>
                   <div class="row my-4">
                      <div class="col-lg-9 shadowit">
-                        <div class="card">
+                        <div class="card cardone z-depth-2 wow fadeInUp">
                            <div class="card-body">
                               <div class="row">
                                  <div class="col-lg-8">
                                     <h5 class="card-title pb-3">Interim Mess Pricing</h5>
                                     <p class="card-text pb-1">Please find details of interim mess pricing.</p>
                                  </div>
-                                 <div class="col-lg-4 my-auto mx-auto">
+                                 <div class="col-lg-4 my-auto mx-auto" style="display: flex;justify-content: flex-end;">
                                     <button type="button" class="btn btn-dark btn-style text-uppercase"
                                        style="border: none;letter-spacing: 2px;">View Pricing</button>
                                  </div>
@@ -138,8 +138,8 @@
          </div>
          <br />
          <br />
-         <div class="laptop">
-            <div class="container" style="display: flex;justify-content: space-between;">
+         <div>
+            <!-- <div class="container" style="display: flex;justify-content: space-between;">
                <button type="button" class="btn btn-style mess-coordinator" (click)="coord()">Mess Coordinator</button>
                <button type="button" class="btn btn-style mess-grievance" (click)="griev()">Mess Grievance Cell</button>
                <button type="button" class="btn btn-style mess-cmc" (click)="cmc()">CMC Coordinator</button>
@@ -158,15 +158,12 @@
                <button type="button" class="btn btn-style mess-canteen-premises" (click)="chygene()">Canteen Premises
                   Hygiene
                   Checking</button>
-            </div>
-            <br />
-            <br />
-            <h1 class="text-center my-2">Mess Coordinator</h1>
-            <div *ngIf="messCoordinator" class="container mp" id="mess-coordinator">
+            </div> -->
+            <!-- <br /> -->
+            <!-- <br /> -->
+            <h1 class="my-2">Mess Coordinator</h1>
+            <div class="container mp" id="mess-coordinator">
                <div class="row">
-                  <div class="col-sm-4">
-
-                  </div>
                   <div class="col-sm-4">
                      <div class="card">
                         <div class="card-body">
@@ -180,12 +177,10 @@
                   </div>
                </div>
             </div>
-            <h1 class="text-center my-2">Mess Grievance cell</h1>
-            <div *ngIf="messgriev" class="container mp" id="mess-coordinator">
+            <br><hr>
+            <h1 class="my-2">Mess Grievance cell</h1>
+            <div  class="container mp" id="mess-coordinator">
                <div class="row">
-                  <div class="col-sm-4">
-
-                  </div>
                   <div class="col-sm-4">
                      <div class="card">
                         <div class="card-body">
@@ -199,12 +194,10 @@
                   </div>
                </div>
             </div>
-            <h1 class="text-center my-2">CMC Coordinator</h1>
-            <div *ngIf="cmcord" class="container mp" id="mess-coordinator">
+            <br><hr>
+            <h1 class="my-2">CMC Coordinator</h1>
+            <div class="container mp" id="mess-coordinator">
                <div class="row">
-                  <div class="col-sm-4">
-
-                  </div>
                   <div class="col-sm-4">
                      <div class="card">
                         <div class="card-body">
@@ -218,12 +211,10 @@
                   </div>
                </div>
             </div>
-            <h1 class="text-center my-2">Canteen Inspection</h1>
-            <div *ngIf="cinspect" class="container mp" id="mess-coordinator">
+            <br><hr>
+            <h1 class="my-2">Canteen Inspection</h1>
+            <div  class="container mp" id="mess-coordinator">
                <div class="row">
-                  <div class="col-sm-4">
-
-                  </div>
                   <div class="col-sm-4">
                      <div class="card">
                         <div class="card-body">
@@ -237,12 +228,10 @@
                   </div>
                </div>
             </div>
-            <h1 class="text-center my-2">Canteen Grievances</h1>
-            <div *ngIf="cgriev" class="container mp" id="mess-coordinator">
+            <br><hr>
+            <h1 class="my-2">Canteen Grievances</h1>
+            <div  class="container mp" id="mess-coordinator">
                <div class="row">
-                  <div class="col-sm-4">
-
-                  </div>
                   <div class="col-sm-4">
                      <div class="card">
                         <div class="card-body">
@@ -256,9 +245,10 @@
                   </div>
                </div>
             </div>
-            <h1 class="text-center my-2">Mess Inspection
+            <br><hr>
+            <h1 class="my-2">Mess Inspection
                Team</h1>
-            <div *ngIf="messInspection" class="container mp" id="mess-coordinator">
+            <div class="container mp" id="mess-coordinator">
                <div class="row">
                   <div class="col-sm-4">
 
@@ -288,8 +278,9 @@
                   </div>
                </div>
             </div>
-            <h1 class="text-center my-2">Mess Premises checking team</h1>
-            <div *ngIf="messhygene" class="container mp" id="mess-coordinator">
+            <br><hr>
+            <h1 class="my-2">Mess Premises checking team</h1>
+            <div  class="container mp" id="mess-coordinator">
                <div class="row">
                   <div class="col-sm-4">
                      <div class="card">
@@ -313,9 +304,10 @@
                   </div>
                </div>
             </div>
-            <h1 class="text-center my-2">Mess Preparation
+            <br><hr>
+            <h1 class="my-2">Mess Preparation
                Team</h1>
-            <div *ngIf="messprep" class="container mp" id="mess-coordinator">
+            <div class="container mp" id="mess-coordinator">
                <div class="row">
                   <div class="col-sm-4">
 
@@ -345,14 +337,12 @@
                   </div>
                </div>
             </div>
-            <h1 class="text-center my-2">Canteen Premises
+            <br><hr>
+            <h1 class="my-2">Canteen Premises
                Hygiene
                Checking</h1>
-            <div *ngIf="canteenhygene" class="container mp" id="mess-coordinator">
+            <div class="container mp" id="mess-coordinator">
                <div class="row">
-                  <div class="col-sm-4">
-
-                  </div>
                   <div class="col-sm-4">
                      <div class="card">
                         <div class="card-body">
@@ -366,8 +356,9 @@
                   </div>
                </div>
             </div>
+            <br>
          </div>
-         <div class="phone container">
+         <!-- <div class="phone container">
             <div class="row mt-2">
                <h1>Mess Coordinator</h1>
                <div class="col-sm-5 card mt-2">
@@ -413,7 +404,7 @@
                   </div>
                </div>
             </div>
-         </div>
+         </div> -->
       </div>
    </section>
 

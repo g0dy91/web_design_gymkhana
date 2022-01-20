@@ -143,3 +143,17 @@ $tab-color: #9d0cdb;
     display: block;
   }
 }
+.cardone:hover{
+  // transform:scale(1.2);
+  background: #753bbd;
+  color:white;
+  .cardone h5{
+    color:white;
+  }
+}
+@media screen and (max-width:575px) {
+  .card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
