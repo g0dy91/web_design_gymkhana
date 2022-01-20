@@ -231,7 +231,7 @@
             right: auto;
             left: -39px;
             top: 32px;
-            border-right: 18px solid #5a99ee;
+            border-right: 18px solid #b333c4;
             border-left: inherit;
         }
         .timeline.animated .timeline-row:nth-child(odd) .timeline-content {
@@ -243,3 +243,54 @@
     }
 
       
+
+    .box {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px
+    }
+    
+    .our-services {
+        margin-top: 75px;
+        padding-bottom: 30px;
+        padding: 0 60px;
+        min-height: 198px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #fff;
+        transition: all .4s ease-in-out;
+        box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
+    }
+    
+    .our-services .icon {
+        margin-bottom: -21px;
+        transform: translateY(-50%);
+        text-align: center
+    }
+    
+    .our-services:hover h4,
+    .our-services:hover p {
+        color: #fff
+    }
+    
+    .speedup:hover {
+        box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+        cursor: pointer;
+        background-color: #a4508b;
+        background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    }
+    
+    .settings:hover {
+        box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+        cursor: pointer;
+        background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+    }
+    
+    .privacy:hover {
+        box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+        cursor: pointer;
+        background-color: #7f53ac;
+        background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);    }
+    
+    
