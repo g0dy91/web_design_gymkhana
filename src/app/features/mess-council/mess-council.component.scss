@@ -157,3 +157,12 @@ $tab-color: #9d0cdb;
     margin-bottom: 10px;
   }
 }
+.card{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transform: scale(0.95);
+  box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+}
+.card:hover{
+  transform: scale(1);
+}
