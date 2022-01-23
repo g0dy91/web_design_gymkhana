@@ -52,6 +52,8 @@
       }
       
     span{
+        // opacity:0;
+        // visibility: hidden;
         color: #753BBD;
         font-size: 1.125em;
         font-weight: 600;
@@ -80,6 +82,8 @@
         }
     
         span {
+          opacity: 1;
+          visibility: visible;
           color: #FFFFFF;
           margin:1em;
         }

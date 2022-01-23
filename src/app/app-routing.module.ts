@@ -10,6 +10,7 @@ import { MediaCouncilComponent } from './features/media-council/media-council.co
 import { ArchivesComponent } from './features/archives/archives.component';
 import { OfficeBearersComponent } from './features/office-bearers/office-bearers.component';
 import { GalleryComponent } from './features/gallery/gallery.component';
+import { GeneralCouncilComponent } from './features/general-council/general-council.component';
 const routes: Routes = [
   {
     path: '',
@@ -56,6 +57,9 @@ const routes: Routes = [
       {
         path: 'gallery',
         component: GalleryComponent,
+      {
+        path:'general-council',
+        component: GeneralCouncilComponent,
       },
     ]
   },
