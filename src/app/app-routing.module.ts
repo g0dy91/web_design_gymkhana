@@ -53,10 +53,10 @@ const routes: Routes = [
         path: 'office-bearers',
         component: OfficeBearersComponent,
       },
-      
       {
         path: 'gallery',
-        component: GalleryComponent,
+        component: GalleryComponent
+      },
       {
         path:'general-council',
         component: GeneralCouncilComponent,
