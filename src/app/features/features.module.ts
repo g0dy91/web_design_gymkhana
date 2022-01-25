@@ -20,8 +20,8 @@ import { AcademicCouncilComponent } from './academic-council/academic-council.co
 import { BtechComponent } from './academic-council/btech/btech.component';
 import { MtechComponent } from './academic-council/mtech/mtech.component';
 import { PhdComponent } from './academic-council/phd/phd.component';
-import { Team21Component } from './archives/team21/team21.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ElectionTempComponent } from './archives/election-temp/election-temp.component';
 
 const components=[
   DashboardComponent,
@@ -39,8 +39,8 @@ const components=[
   BtechComponent,
   MtechComponent,
   PhdComponent,
-  Team21Component,
-  GalleryComponent
+  GalleryComponent,
+  ElectionTempComponent
 ]
 
 @NgModule({
