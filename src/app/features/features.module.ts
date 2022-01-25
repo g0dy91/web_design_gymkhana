@@ -21,8 +21,6 @@ import { BtechComponent } from './academic-council/btech/btech.component';
 import { MtechComponent } from './academic-council/mtech/mtech.component';
 import { PhdComponent } from './academic-council/phd/phd.component';
 import { Team21Component } from './archives/team21/team21.component';
-import { Team20Component } from './archives/team20/team20.component';
-import { Team19Component } from './archives/team19/team19.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
 const components=[
@@ -42,8 +40,6 @@ const components=[
   MtechComponent,
   PhdComponent,
   Team21Component,
-  Team20Component,
-  Team19Component,
   GalleryComponent
 ]
 

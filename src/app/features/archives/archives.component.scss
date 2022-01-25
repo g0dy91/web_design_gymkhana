@@ -1,38 +1,4 @@
 @import "helpers/colors";
- .wrapper {
-    width: 100vw;
-    margin: 0 auto;
-    height: 400px;
-    background-color: #161616;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transition: all 0.3s ease;
- }
- 
- @media screen and (max-width: 767px) {
-    .wrapper {
-       height: 700px;
-    }
- }
- 
- .content {
-    max-width: 1024px;
-    width: 100%;
-    padding: 1 4%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
- 
- @media screen and (max-width: 767px) {
-    .content {
-       padding-top: 300px;
-       flex-direction: column;
-    }
- }
  
  .card {
     width: 100%;
