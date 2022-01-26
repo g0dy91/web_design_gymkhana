@@ -12,10 +12,10 @@
     </div>
     <div class="row row-cols-1 row-cols-md-3 g-4" style="justify-content: center">
       
-    <a href="#" class="data-card" *ngFor="let person of branch">
+    <a style="cursor: pointer;" class="data-card" *ngFor="let person of branch">
       <h3>{{person.name}}</h3>
       <h4>{{person.clgemail}}</h4>
-      <p>This is the agenda <a href={{person.pdfurl}} download={{person.name}}>Click Here</a></p>
+      <p>Agenda  &#8594; <a href={{person.pdfurl}} download={{person.name}} style="color: rgb(255, 0, 255);">Click Here</a></p>
     </a>
     </div>
   </div>
