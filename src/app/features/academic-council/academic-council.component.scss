@@ -1,31 +1,3 @@
-// $tab-color:#9d0cdb;
-
-// .nav-tabs .nav-link.active {
-//   background-color: $tab-color;
-//   color: #fff;
-//   border: 3px solid $tab-color;
-// }
-
-// .nav-tabs .nav-link {
-//   background-color: #fff;
-//   color: $tab-color;
-//   border: 3px solid $tab-color;
-//   margin-right: 2rem;
-//   padding-left: 3rem;
-//   padding-right: 3rem;
-// }
-
-// .nav-tabs .nav-link:hover {
-//   border: 3px solid $tab-color;
-// }
-
-// .tab-content {
-//   border: 1px solid $tab-color;
-//   border-radius:0.25em;
-//   padding: 20px;
-// }
-
-
 .card{
   position: relative;
   width: 350px;
@@ -199,7 +171,7 @@ margin-top: 5px;
 .member{
     background-color: white;
     align-items: center;
-    min-height: 150px;
+    min-height: 100px;
     border-radius: .5em;
     text-decoration: none;
     margin: 1em;
