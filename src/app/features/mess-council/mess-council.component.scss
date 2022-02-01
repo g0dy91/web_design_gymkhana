@@ -1,5 +1,81 @@
 $tab-color: #9d0cdb;
+@import "helpers/colors";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.backgroundit{
+  background: rgba(0, 0, 0, 0.829);
+  font-family: 'Poppins';
+  h1{
+    font-size: 52px;
+  }
+}
+.widthit{
+  width: 60vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+@media screen and (max-width:900px) {
+  .widthit{
+    width: 100vw;
+    margin:0;
+  }
+}
+h1{
+  color: black;
+}
+*{
+  font-family: 'Poppins';
+}
+i{
+  font-family: "Font Awesome 5 Free";
+}
+.card2 {
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
+  height: 180px;
+  background-color: #292929;
+  margin: 10px;
+  // border-radius: 10px;
+  // box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  // border: 2px solid rgba(7, 7, 7, 0.12);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
 
+.card2 .title {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.card2 .text {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 11px;
+  text-align: center;
+  // margin-top: 20px;
+  color: white;
+  font-weight: 200;
+  // letter-spacing: 2px;
+  // max-height: 0;
+  transition: all 0.3s ease;
+}
+
+.card2:hover {
+  max-height: 270px;
+}
 .nav-tabs .nav-link.active {
   background-color: $tab-color;
   color: #fff;
@@ -25,12 +101,12 @@ $tab-color: #9d0cdb;
   padding: 20px;
 }
 .btn-style {
-  background-color: #600b75;
-  color: white;
-  padding: 10px 14px;
+  background-color: #fff;
+  color: #000;
+  // padding: 10px 14px;
   transition: all 1s;
   border: none;
-  border: 2px solid #600b75;
+  border: 2px solid #fff;
   border-radius: none;
 }
 .btn:focus {
@@ -38,8 +114,8 @@ $tab-color: #9d0cdb;
   box-shadow: none;
 }
 .btn-style:hover {
-  background-color: #a841c2;
-  border: 2px solid #a841c2;
+  background-color:whitesmoke;
+  border: 2px solid whitesmoke;
 }
 .card1 {
   position: relative;
@@ -113,7 +189,7 @@ $tab-color: #9d0cdb;
   color: #777;
   text-transform: uppercase;
 }
-.card {
+.card2 {
   box-shadow: 0 0 0 0 rgb(0 0 0 / 20%), 0 0 0 0 rgb(0 0 0 / 14%),
     0 0 0 0 rgb(0 0 0 / 12%);
 }
@@ -143,26 +219,17 @@ $tab-color: #9d0cdb;
     display: block;
   }
 }
-.cardone:hover{
-  // transform:scale(1.2);
-  background: #753bbd;
-  color:white;
-  .cardone h5{
-    color:white;
-  }
-}
-@media screen and (max-width:575px) {
-  .card{
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-.card{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  transform: scale(0.95);
-  box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
-}
-.card:hover{
-  transform: scale(1);
-}
+// .cardone:hover {
+//   // transform:scale(1.2);
+//   background: #753bbd;
+//   color: white;
+//   .cardone h5 {
+//     color: white;
+//   }
+// }
+// @media screen and (max-width: 575px) {
+//   .card {
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+//   }
+// }

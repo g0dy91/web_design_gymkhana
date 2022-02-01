@@ -1,5 +1,33 @@
 $tab-color: #9d0cdb;
-
+@import "helpers/colors";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.backgroundit{
+  background: rgba(0, 0, 0, 0.829);
+  font-family: 'Poppins';
+  h1{
+    font-size: 52px;
+  }
+}
+.widthit{
+  width: 60vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+@media screen and (max-width:900px) {
+  .widthit{
+    width: 100vw;
+    margin:0;
+  }
+}
+h1{
+  color: black;
+}
+*{
+  font-family: 'Poppins';
+}
+i{
+  font-family: "Font Awesome 5 Free";
+}
 .nav-tabs .nav-link.active {
   background-color: $tab-color;
   color: #fff;
