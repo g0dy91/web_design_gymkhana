@@ -8,6 +8,10 @@ $tab-color: #9d0cdb;
     font-size: 52px;
   }
 }
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
 .widthit{
   width: 60vw;
   margin-left: 20vw;
