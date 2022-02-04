@@ -1,11 +1,16 @@
+$tab-color: #9d0cdb;
 @import "helpers/colors";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 .backgroundit{
   background: rgba(0, 0, 0, 0.829);
   font-family: 'Poppins';
-  span{
+  .h1{
     font-size: 52px;
   }
+}
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
 }
 .widthit{
   width: 60vw;
