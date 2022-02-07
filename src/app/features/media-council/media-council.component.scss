@@ -320,6 +320,7 @@ ol.gradient-list > li {
 ol.gradient-list > li::before,
 ol.gradient-list > li::after {
   // background: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
+  background-color: #000;
   border-radius: 1rem 1rem 0 1rem;
   content: "";
   height: 3rem;
@@ -333,6 +334,7 @@ ol.gradient-list > li::before {
   align-items: flex-end;
   content: counter(gradient-counter);
   color: #1d1f20;
+  color: white;
   display: flex;
   font: 900 1.5em/1 "Montserrat";
   justify-content: flex-end;
