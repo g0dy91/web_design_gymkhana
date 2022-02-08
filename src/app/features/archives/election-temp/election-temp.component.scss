@@ -1,9 +1,9 @@
 h1{
-    color: #1c68b3 ;
+    color: rgb(0, 0, 0) ;
     font-size:clamp(1.5rem, 5vw, 3.5rem);
   }
   h4{
-    color: #3a0166 ;
+    color: rgb(0, 0, 0) ;
     margin-top: 2.5rem;
   }
   
@@ -27,16 +27,19 @@ h1{
     transition: transform .45s ease, background .45s ease;
     
     h3 {
-      color: #2E3C40;
-      font-weight: 600;
-      padding-bottom: .5em;
-      margin: 0 0 0.142857143em;
-      border-bottom: 2px solid #753BBD;
-      transition: color .45s ease, border .45s ease;
+      color:  #000000;
+      font-weight: 500;
+      font-size: 24px;
+      font-style: normal;
+      text-transform: capitalize;
+
+      // padding-bottom: .5em;
+      // margin: 0 0 0.142857143em;
+      // transition: color .45s ease, border .45s ease;
     }
   
     h4 {
-      color: #627084;
+      color: rgb(0, 0, 0);
       text-transform: uppercase;
       font-size: 1.125em;
       font-weight: 700;
@@ -46,15 +49,15 @@ h1{
       transition: color .45s ease;
     }
   
-    p {
-      opacity: 0;
-      color: #FFFFFF;
-      font-weight: 600;
-      line-height: 1.8;
-      margin: 0 0 1.25em;
-      transform: translateY(-1em);
-      transition: opacity .45s ease, transform .5s ease;
-    }
+    // p {
+    //   // opacity: 0;
+    //   color: #FFFFFF;
+    //   font-weight: 600;
+    //   line-height: 1.8;
+    //   margin: 0 0 1.25em;
+    //   transform: translateY(-1em);
+    //   transition: opacity .45s ease, transform .5s ease;
+    // }
   
     .link-text {
       display: block;
@@ -67,38 +70,43 @@ h1{
   
     }
     
-    &:hover {
-      background: #753BBD;
-      transform: scale(1.02);
+    // &:hover {
+    //   background: #753BBD;
+    //   transform: scale(1.02);
       
-      h3 {
-        color: #FFFFFF;
-        border-bottom-color: #A754C4;
-      }
+    //   h3 {
+    //     color: #FFFFFF;
+    //     border-bottom-color: #A754C4;
+    //   }
   
-      h4,h6 {
-        color: #FFFFFF;
-      }
+    //   h4,h6 {
+    //     color: #FFFFFF;
+    //   }
   
-      p {
-        opacity: 1;
-        transform: none;
-      }
+    //   p {
+    //     opacity: 1;
+    //     transform: none;
+    //   }
   
-      .link-text {
-        color: #b64141;
+    //   .link-text {
+    //     color: #b64141;
   
-        svg {
-          animation: point 1.25s infinite alternate;
+    //     svg {
+    //       animation: point 1.25s infinite alternate;
           
-          path {
-            fill: #FFFFFF;
-          }
-        }
-      }
-    }
+    //       path {
+    //         fill: #FFFFFF;
+    //       }
+    //     }
+    //   }
+    // }
   }
-  
+  h6{
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+  }
   @keyframes point {
     0% {
      transform: translateX(0);
