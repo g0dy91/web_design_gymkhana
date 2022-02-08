@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-mtech',
@@ -9,6 +9,8 @@ export class MtechComponent implements OnInit {
 
   constructor() { }
 
+  @Input()
+  mtech_crs!: any;  
   ngOnInit(): void {
   }
 

@@ -1,3 +1,44 @@
+<section id="btech" class="service-section widthit">
+  <div class="container" *ngFor="let branch of btech_crs">
+    <div>
+      <div class="container mp" id="btechCRs">
+        <div class="row">
+          <div class="col-sm-6 ml-0 pl-0 mt-4 wow fadeInUp">
+            <h3>{{ branch[0].title }}</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-sm-6 wow fadeInUp"
+            *ngFor="let person of branch"
+            style="padding-left: 0; margin-left: 0"
+          >
+            <div>
+              <div class="card-body" style="padding-left: 0; margin-left: 0">
+                <h6 class="card-title">{{ person.name }}</h6>
+                <a
+                  href="mailto:{{ person.clgemail }}"
+                  style="color: rgba(0, 0, 0, 0.863)"
+                  ><i
+                    class="fas fa-envelope mr-2"
+                    style="color: rgba(0, 0, 0, 0.863)"
+                  ></i
+                  >{{ person.clgemail }}</a
+                ><br />
+                <i
+                  class="fas fa-phone mr-2"
+                  style="color: rgba(0, 0, 0, 0.863)"
+                ></i
+                >{{ person.mobile }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 
 <section id="council" class="service-section widthit">
   <br />
   <br />
@@ -46,6 +87,26 @@
           </div>
         </div>
         <div class="row">
+          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+            <div>
+              <div class="card-body" style="padding-left: 0; margin-left: 0">
+                <h6 class="card-title">Ankit Saha</h6>
+                <i
+                  class="fas fa-envelope mr-2"
+                  style="color: rgba(0, 0, 0, 0.863)"
+                ></i
+                >ai21btech11004@iith.ac.in
+                <br />
+                <i
+                  class="fas fa-phone mr-2"
+                  style="color: rgba(0, 0, 0, 0.863)"
+                ></i
+                >7981742304
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-sm-6 ml-0 pl-0 mt-4">
             <h3>Biomedical Engineering</h3>
           </div>
@@ -65,6 +126,49 @@
                   style="color: rgba(0, 0, 0, 0.863)"
                 ></i
                 >9290230330
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+            <div>
+              <div class="card-body" style="padding-left: 0; margin-left: 0">
+                <h6 class="card-title">Krithik Macha</h6>
+                <i
+                  class="fas fa-envelope mr-2"
+                  style="color: rgba(0, 0, 0, 0.863)"
+                ></i
+                >bm21btech11013@iith.ac.in
+                <br />
+                <i
+                  class="fas fa-phone mr-2"
+                  style="color: rgba(0, 0, 0, 0.863)"
+                ></i
+                >7337223626
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm ml-0 pl-0 mt-4">
+            <h3>Biotechnology and Bioinformatics</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+            <div>
+              <div class="card-body" style="padding-left: 0; margin-left: 0">
+                <h6 class="card-title">Uppulapu manikanta</h6>
+                <i
+                  class="fas fa-envelope mr-2"
+                  style="color: rgba(0, 0, 0, 0.863)"
+                ></i
+                >bt21btech11005@iith.ac.in
+                <br />
+                <i
+                  class="fas fa-phone mr-2"
+                  style="color: rgba(0, 0, 0, 0.863)"
+                ></i
+                >7730006389
               </div>
             </div>
           </div>
@@ -109,73 +213,10 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-              <div>
-                <div class="card-body" style="padding-left: 0; margin-left: 0">
-                  <h6 class="card-title">Yash Sharma</h6>
-                  <i
-                    class="fas fa-envelope mr-2"
-                    style="color: rgba(0, 0, 0, 0.863)"
-                  ></i>
-                  <br />
-                  <i
-                    class="fas fa-phone mr-2"
-                    style="color: rgba(0, 0, 0, 0.863)"
-                  ></i
-                  >9405620011
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-6 ml-0 pl-0 mt-4">
-          <h3>Civil Engineering</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-          <div>
-            <div class="card-body" style="padding-left: 0; margin-left: 0">
-              <h6 class="card-title">Sarthak Bora</h6>
-              <i
-                class="fas fa-envelope mr-2"
-                style="color: rgba(0, 0, 0, 0.863)"
-              ></i>
-              <br />
-              <i
-                class="fas fa-phone mr-2"
-                style="color: rgba(0, 0, 0, 0.863)"
-              ></i
-              >9978043862
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-          <div>
-            <div class="card-body" style="padding-left: 0; margin-left: 0">
-              <h6 class="card-title">Kishore K</h6>
-              <i
-                class="fas fa-envelope mr-2"
-                style="color: rgba(0, 0, 0, 0.863)"
-              ></i>
-              <br />
-              <i
-                class="fas fa-phone mr-2"
-                style="color: rgba(0, 0, 0, 0.863)"
-              ></i
-              >8778559025
-            </div>
-          </div>
-        </div>
-        <div class="row">
           <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
             <div>
               <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">Sidhant Ranka</h6>
+                <h6 class="card-title">Yash Sharma</h6>
                 <i
                   class="fas fa-envelope mr-2"
                   style="color: rgba(0, 0, 0, 0.863)"
@@ -185,14 +226,127 @@
                   class="fas fa-phone mr-2"
                   style="color: rgba(0, 0, 0, 0.863)"
                 ></i
-                >9586406788
+                >9405620011
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+            <div>
+              <div class="card-body" style="padding-left: 0; margin-left: 0">
+                <h6 class="card-title">Gnana Sathwik Sai S</h6>
+                <i
+                  class="fas fa-envelope mr-2"
+                  style="color: rgba(0, 0, 0, 0.863)"
+                ></i
+                >ch21btech11014@iith.ac.in
+
+                <br />
+                <i
+                  class="fas fa-phone mr-2"
+                  style="color: rgba(0, 0, 0, 0.863)"
+                ></i
+                >6361705847
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 ml-0 pl-0 mt-4">
+        <h3>Civil Engineering</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+        <div>
+          <div class="card-body" style="padding-left: 0; margin-left: 0">
+            <h6 class="card-title">Sarthak Bora</h6>
+            <i
+              class="fas fa-envelope mr-2"
+              style="color: rgba(0, 0, 0, 0.863)"
+            ></i>
+            <br />
+            <i class="fas fa-phone mr-2" style="color: rgba(0, 0, 0, 0.863)"></i
+            >9978043862
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+        <div>
+          <div class="card-body" style="padding-left: 0; margin-left: 0">
+            <h6 class="card-title">Kishore K</h6>
+            <i
+              class="fas fa-envelope mr-2"
+              style="color: rgba(0, 0, 0, 0.863)"
+            ></i>
+            <br />
+            <i class="fas fa-phone mr-2" style="color: rgba(0, 0, 0, 0.863)"></i
+            >8778559025
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+        <div>
+          <div class="card-body" style="padding-left: 0; margin-left: 0">
+            <h6 class="card-title">Sidhant Ranka</h6>
+            <i
+              class="fas fa-envelope mr-2"
+              style="color: rgba(0, 0, 0, 0.863)"
+            ></i>
+            <br />
+            <i class="fas fa-phone mr-2" style="color: rgba(0, 0, 0, 0.863)"></i
+            >9586406788
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+        <div>
+          <div class="card-body" style="padding-left: 0; margin-left: 0">
+            <h6 class="card-title">Aravind Siddhartha K</h6>
+            <i
+              class="fas fa-envelope mr-2"
+              style="color: rgba(0, 0, 0, 0.863)"
+            ></i
+            >ce21btech11021@iith.ac.in
+
+            <br />
+            <i class="fas fa-phone mr-2" style="color: rgba(0, 0, 0, 0.863)"></i
+            >8688139370
+          </div>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-sm-6 ml-0 pl-0 mt-4">
+        <div class="col-sm ml-0 pl-0 mt-4">
+          <h3>Computational Engineering</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Ishaan Jain</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >co21btech11006@iith.ac.in
+
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >9456640301
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm ml-0 pl-0 mt-4">
           <h3>Computer science Engineering</h3>
         </div>
       </div>
@@ -231,22 +385,40 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-            <div>
-              <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">Anirudh Srinivasan</h6>
-                <i
-                  class="fas fa-envelope mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i>
-                <br />
-                <i
-                  class="fas fa-phone mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >9677215980
-              </div>
+
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Anirudh Srinivasan</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i>
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >9677215980
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">JayaChandra Naidu Rajapu</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >cs21btech11050@iith.ac.in
+
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >6303497076
             </div>
           </div>
         </div>
@@ -291,22 +463,40 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-            <div>
-              <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">Satya Aditi Dhaaipule</h6>
-                <i
-                  class="fas fa-envelope mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i>
-                <br />
-                <i
-                  class="fas fa-phone mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >9505695646
-              </div>
+
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Satya Aditi Dhaaipule</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i>
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >9505695646
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Harish</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >ee21btech11047@iith.ac.in
+
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >8985947355
             </div>
           </div>
         </div>
@@ -351,22 +541,40 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-            <div>
-              <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">Tejash Agrahari</h6>
-                <i
-                  class="fas fa-envelope mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i>
-                <br />
-                <i
-                  class="fas fa-phone mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >9651180408
-              </div>
+
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Tejash Agrahari</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i>
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >9651180408
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Hemang Nimma</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >ep21btech11013@iith.ac.in
+
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >9741918202
             </div>
           </div>
         </div>
@@ -411,9 +619,54 @@
             </div>
           </div>
         </div>
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Bapatu Manoj Kumar Reddy</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >es21btech11010@iith.ac.in
+
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >7569421250
+            </div>
+          </div>
+        </div>
       </div>
       <div class="row">
-        <div class="col-sm-6 ml-0 pl-0 mt-4">
+        <div class="col-sm ml-0 pl-0 mt-4">
+          <h3>Industrial Chemistry</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Sneha Malik</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >ic21btech11008@iith.ac.in
+
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >8197370409
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm ml-0 pl-0 mt-4">
           <h3>Material Science and metallurgical Engineering</h3>
         </div>
       </div>
@@ -452,22 +705,40 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-            <div>
-              <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">Samyak Joshi</h6>
-                <i
-                  class="fas fa-envelope mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i>
-                <br />
-                <i
-                  class="fas fa-phone mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >9908010452
-              </div>
+
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Samyak Joshi</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i>
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >9908010452
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Aman Jagtap</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >ms21btech11005@iith.ac.in
+
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >7235915379
             </div>
           </div>
         </div>
@@ -512,28 +783,46 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-            <div>
-              <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">Kethari Narasimha Vardhan</h6>
-                <i
-                  class="fas fa-envelope mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i>
-                <br />
-                <i
-                  class="fas fa-phone mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >9652793113
-              </div>
+
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Kethari Narasimha Vardhan</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i>
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >9652793113
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Rutv Kocheta</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >ma21btech11014@iith.ac.in
+
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >9866117636
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-6 ml-0 pl-0 mt-4">
+        <div class="col-sm ml-0 pl-0 mt-4">
           <h3>Mechanical and aerospace Engineering</h3>
         </div>
       </div>
@@ -572,26 +861,44 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-            <div>
-              <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">Pavan Kalyan</h6>
-                <i
-                  class="fas fa-envelope mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i>
-                <br />
-                <i
-                  class="fas fa-phone mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >8106219096
-              </div>
+
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Pavan Kalyan</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i>
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >8106219096
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div>
+            <div class="card-body" style="padding-left: 0; margin-left: 0">
+              <h6 class="card-title">Aditya Kapilesh</h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >me21btech11005@iith.ac.in
+
+              <br />
+              <i
+                class="fas fa-phone mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >7021778242
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->

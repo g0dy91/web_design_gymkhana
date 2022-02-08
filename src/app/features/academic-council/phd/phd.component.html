@@ -1,119 +1,35 @@
-<section id="council" class="service-section widthit">
-  <br />
-  <br />
-  <div class="container">
+<section id="phd" class="service-section widthit">
+  <div class="container" *ngFor="let branch of phd_crs">
     <div>
-      <div class="container mp" id="mess-coordinator">
+      <div class="container mp" id="phdCRs">
         <div class="row">
-          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-            <div>
-              <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">Brighesh Aghav</h6>
-                <h6 class="card-title">Department</h6>
-                <i
-                  class="fas fa-envelope mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >ug_rep@gymkhana.iith.ac.in<br />
-                <i
-                  class="fas fa-phone mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >8698488688
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-            <div>
-              <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">Likitha.S</h6>
-                <h6 class="card-title">Department</h6>
-                <i
-                  class="fas fa-envelope mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >ug_rep@gymkhana.iith.ac.in<br />
-                <i
-                  class="fas fa-phone mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >8328596047
-              </div>
-            </div>
+          <div class="col-sm-6 ml-0 pl-0 mt-2 wow fadeInUp">
+            <h3>{{ branch[0].title }}</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
+          <div
+            class="col-sm-6 wow fadeInUp"
+            *ngFor="let person of branch"
+            style="padding-left: 0; margin-left: 0"
+          >
             <div>
               <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">Brighesh Aghav</h6>
-                <h6 class="card-title">Department</h6>
-                <i
-                  class="fas fa-envelope mr-2"
+                <h6 class="card-title">{{ person.name }}</h6>
+                <a
+                  href="mailto:{{ person.clgemail }}"
                   style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >ug_rep@gymkhana.iith.ac.in<br />
+                  ><i
+                    class="fas fa-envelope mr-2"
+                    style="color: rgba(0, 0, 0, 0.863)"
+                  ></i
+                  >{{ person.clgemail }}</a
+                ><br />
                 <i
                   class="fas fa-phone mr-2"
                   style="color: rgba(0, 0, 0, 0.863)"
                 ></i
-                >8698488688
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-            <div>
-              <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">Likitha.S</h6>
-                <h6 class="card-title">Department</h6>
-                <i
-                  class="fas fa-envelope mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >ug_rep@gymkhana.iith.ac.in<br />
-                <i
-                  class="fas fa-phone mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >8328596047
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-            <div>
-              <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">Brighesh Aghav</h6>
-                <h6 class="card-title">Department</h6>
-                <i
-                  class="fas fa-envelope mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >ug_rep@gymkhana.iith.ac.in<br />
-                <i
-                  class="fas fa-phone mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >8698488688
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
-            <div>
-              <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">Likitha.S</h6>
-                <h6 class="card-title">Department</h6>
-                <i
-                  class="fas fa-envelope mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >ug_rep@gymkhana.iith.ac.in<br />
-                <i
-                  class="fas fa-phone mr-2"
-                  style="color: rgba(0, 0, 0, 0.863)"
-                ></i
-                >8328596047
+                >{{ person.mobile }}
               </div>
             </div>
           </div>
