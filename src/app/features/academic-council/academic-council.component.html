@@ -3,13 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <div class="text-white">
-            <span
-              class="wow fadeInUp text-white"
-              style="letter-spacing: 2px;"
-              data-wow-delay=".2s"
-              class="h1"
-            >
+          <div class="wow fadeInUp text-white" data-wow-delay=".5s">
+            <span style="letter-spacing: 2px" class="h1">
               Academic<br />Council
             </span>
           </div>
@@ -47,7 +42,11 @@
     </div>
   </section>
 
-  <section id="council" class="service-section pt-100">
+  <section
+    id="Secretary"
+    class="service-section pt-100 wow fadeInUp"
+    data-wow-delay=".2s"
+  >
     <div class="container">
       <div class="row align-items-center">
         <div class="row align-items-center d-flex justify-content-center">
@@ -84,29 +83,90 @@
       <div class="section-title text-center mb-60">
         <h1 class="wow fadeInUp" data-wow-delay=".2s">Class Representatives</h1>
       </div>
-      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+      <ul
+        class="nav nav-pills mb-3 justify-content-center"
+        id="pills-tab"
+        role="tablist"
+      >
         <li class="nav-item" role="presentation">
-          <button class="nav-link active btn-lg" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">BTECH</button>
+          <button
+            class="nav-link active btn-lg"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            BTECH
+          </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link btn-lg" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">MTECH</button>
+          <button
+            class="nav-link btn-lg"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            MTECH
+          </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link btn-lg" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">PHD</button>
+          <button
+            class="nav-link btn-lg"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            PHD
+          </button>
         </li>
       </ul>
       <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><app-btech></app-btech></div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><app-mtech></app-mtech></div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><app-phd></app-phd></div>
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+        >
+          <app-btech [btech_crs]="btech_crs_detail"></app-btech>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+        >
+          <app-mtech [mtech_crs]="mtech_crs_detail"></app-mtech>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+        >
+          <app-phd [phd_crs]="mtech_crs_detail"></app-phd>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="council" class="service-section pt-100">
+  <section id="SUGC" class="service-section pt-100">
     <div class="container">
-      <div class="section-title text-center mb-60">
-        <h1 class="wow fadeInUp" data-wow-delay=".2s">SUGC</h1>
+      <div
+        class="section-title text-center mb-60 wow fadeInUp"
+        data-wow-delay=".2s"
+      >
+        <h1>SUGC</h1>
       </div>
       <div class="section-title">
         <p
@@ -124,33 +184,38 @@
       <div class="section-title text-center mt-20 mb-30">
         <h2 class="wow fadeInUp" data-wow-delay=".2s">SUGC Members</h2>
       </div>
-      <section id="council" class="service-section widthit">
+      <section id="council" class="service-section widthit wow fadeInUp">
         <div class="container">
           <div>
             <div class="container mp" id="mess-coordinator">
               <div class="row">
                 <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
                   <div>
-                    <div class="card-body" style="padding-left: 0; margin-left: 0">
-                      <h6 class="card-title">
-                        Mehul Srivastava</h6>
+                    <div
+                      class="card-body"
+                      style="padding-left: 0; margin-left: 0"
+                    >
+                      <h6 class="card-title">Mehul Srivastava</h6>
                       <i
                         class="fas fa-envelope mr-2"
                         style="color: rgba(0, 0, 0, 0.863)"
                       ></i
-                      >me21btech11032@iith.ac.in<br>
+                      >me21btech11032@iith.ac.in<br />
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
                   <div>
-                    <div class="card-body" style="padding-left: 0; margin-left: 0">
+                    <div
+                      class="card-body"
+                      style="padding-left: 0; margin-left: 0"
+                    >
                       <h6 class="card-title">Pritee Nagamwad</h6>
                       <i
                         class="fas fa-envelope mr-2"
                         style="color: rgba(0, 0, 0, 0.863)"
                       ></i
-                      >ce20btech11023@iith.ac.in<br>
+                      >ce20btech11023@iith.ac.in<br />
                     </div>
                   </div>
                 </div>
@@ -158,26 +223,31 @@
               <div class="row">
                 <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
                   <div>
-                    <div class="card-body" style="padding-left: 0; margin-left: 0">
-                      <h6 class="card-title">
-                        V. Sathwik</h6>
+                    <div
+                      class="card-body"
+                      style="padding-left: 0; margin-left: 0"
+                    >
+                      <h6 class="card-title">V. Sathwik</h6>
                       <i
                         class="fas fa-envelope mr-2"
                         style="color: rgba(0, 0, 0, 0.863)"
                       ></i
-                      >cs19btech11022@iith.ac.in<br>
+                      >cs19btech11022@iith.ac.in<br />
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
                   <div>
-                    <div class="card-body" style="padding-left: 0; margin-left: 0">
+                    <div
+                      class="card-body"
+                      style="padding-left: 0; margin-left: 0"
+                    >
                       <h6 class="card-title">Anuraag Chandra Shukla</h6>
                       <i
                         class="fas fa-envelope mr-2"
                         style="color: rgba(0, 0, 0, 0.863)"
                       ></i
-                      >ce18btech11001@iith.ac.in<br>
+                      >ce18btech11001@iith.ac.in<br />
                     </div>
                   </div>
                 </div>
@@ -185,14 +255,16 @@
               <div class="row">
                 <div class="col-sm-6" style="padding-left: 0; margin-left: 0">
                   <div>
-                    <div class="card-body" style="padding-left: 0; margin-left: 0">
-                      <h6 class="card-title">
-                        Maruthi Indresh</h6>
+                    <div
+                      class="card-body"
+                      style="padding-left: 0; margin-left: 0"
+                    >
+                      <h6 class="card-title">Maruthi Indresh</h6>
                       <i
                         class="fas fa-envelope mr-2"
                         style="color: rgba(0, 0, 0, 0.863)"
                       ></i
-                      >ms17b21m000001@iith.ac.in<br>
+                      >ms17b21m000001@iith.ac.in<br />
                     </div>
                   </div>
                 </div>
