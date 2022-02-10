@@ -715,5 +715,6 @@ export class AcademicCouncilComponent implements OnInit {
       },
     ],
   ];
+  
   ngOnInit(): void {}
 }

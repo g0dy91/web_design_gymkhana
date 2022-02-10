@@ -3,20 +3,20 @@
     <div>
       <div class="container mp" id="mtechCRs">
         <div class="row">
-          <div class="col-sm-6 ml-0 pl-0 mt-2 wow fadeInUp">
+          <div class="col-sm-6 ml-0 pl-0 mt-2">
             <h3>{{ branch[0].year }}</h3>
           </div>
         </div>
         <div class="row">
           <div
-            class="col-sm-6 wow fadeInUp"
+            class="col-sm-6"
             *ngFor="let person of branch"
             style="padding-left: 0; margin-left: 0"
           >
             <div>
               <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title font-weight-bold">{{ person.name }}</h6>
-                <h6 class="card-subtitle">{{person.title}}</h6>
+                <h6 class="card-subtitle font-weight-bold pb-1">{{person.title}}</h6>
+                <h6 class="card-title">{{ person.name }}</h6>
                 <a
                   href="mailto:{{ person.clgemail }}"
                   style="color: rgba(0, 0, 0, 0.863)"
