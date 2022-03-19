@@ -1,126 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
-body{
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background: linear-gradient(rgb(84, 46, 109), rgb(20, 1, 26)); 
-    background-image: url("../../../assets/images/background/endless-constellation.svg");
-    min-height: 100vh;
+body {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  //   background: linear-gradient(rgb(84, 46, 109), rgb(20, 1, 26));
+  background-color: black;
+  // background-image: url("../../../assets/images/background/endless-constellation.svg");
+  min-height: 100vh;
+
+  font-family: "Poppins";
 }
-
-section{
-    
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(19rem, 1fr));
-    gap: 1rem;
-    place-items: center;
-    /* justify-content: center;
+// .card {
+// //   background: black;
+// }
+.fontIT {
+  font-family: "Poppins";
+  font-size: 7vw;
+}
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 1rem;
+  place-items: center;
+  /* justify-content: center;
     align-items: center; */
 }
 
-
-.container{
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
-.container .card{
-    position:relative;
-    width: 250px;
-    height: 350px;
-    background: rgba(255,255,255,0.05);
-    margin: 10px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
+.container .card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
 
-    transform-origin:center;
-    transform: perspective(1000px) rotateY(25deg);
-    transition: .5s;
-    
+  transform-origin: center;
+  transform: perspective(1000px) rotateY(25deg);
+  transition: 0.5s;
 }
-.container .card .card-content{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: .75;
-    transition: .5s;
+.container .card .card-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.75;
+  transition: 0.5s;
 }
-.container .card:hover{
-    transform:perspective(800px) rotateY(0deg);
+.container .card:hover {
+  transform: perspective(800px) rotateY(0deg);
 }
-.container .card:hover .card-content{
-    opacity: 1;
-    transform: translateY(-20px);
-
+.container .card:hover .card-content {
+  opacity: 1;
+  transform: translateY(-20px);
 }
-.container .card .card-content .image-box{
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 10px transparent rgb(204, 204, 204);
+.container .card .card-content .image-box {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px transparent rgb(204, 204, 204);
 }
-.container .card .card-content .image-box img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.container .card .card-content .image-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.container .card .card-content .content-box h3{
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    font-weight: 500;
-    font-size: 18;
-    text-align: center;
-    margin: 20px 0 10px;
-    line-height: 1.2em;
+.container .card .card-content .content-box h3 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+  font-size: 18;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.2em;
 }
-.container .card .card-content .content-box h3 span{
-    font-size: 15px;
-    font-weight: 200;
-    font-style: italic;
-    font-family: 'Roboto';
-    text-transform: initial;
-
+.container .card .card-content .content-box h3 span {
+  font-size: 15px;
+  font-weight: 200;
+  font-style: italic;
+  font-family: "Poppins";
+  text-transform: initial;
 }
-.container .card .social{
-    position: relative;
-    bottom: 50px;
-    display: flex;
+.container .card .social {
+  position: relative;
+  bottom: 50px;
+  display: flex;
 }
-.container .card .social li{
-    list-style: none;
-    margin: 0 10px;
-    transform: translateY(50px);
-    transition: .5s;
-    opacity: 0;
-    transition-delay: calc(.1s*var(--i));
+.container .card .social li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(50px);
+  transition: 0.5s;
+  opacity: 0;
+  transition-delay: calc(0.1s * var(--i));
 }
-.container .card:hover .social li{
-    transform: translateY(25px);
-    opacity: 1;
+.container .card:hover .social li {
+  transform: translateY(25px);
+  opacity: 1;
 }
-.container .card .social li a{
-    color: white;
-    font-size: 25px;
+.container .card .social li a {
+  color: white;
+  font-size: 25px;
 }
-h3{
-    color: black;
+h3 {
+  color: black;
 }
