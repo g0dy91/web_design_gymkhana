@@ -5,3 +5,27 @@
   .item:hover{
     filter: brightness(75%);
   }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.backgroundit{
+  background:white;
+  font-family: 'Poppins';
+  .h1{
+
+      position:relative;
+      width: 1vmax;
+      height: 1vh;
+      left: 1px;
+      top: -2px;
+      
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 5vw;;
+      font-size: 20vw;
+      line-height: 1.6vw;
+      
+      color: #000000;
+      
+        
+  }
+}
