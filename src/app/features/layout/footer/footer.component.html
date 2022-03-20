@@ -1,5 +1,5 @@
  <!-- ========================= footer start ========================= -->
- <footer class="footer pt-90">
+ <footer class="footer pt-90" *ngIf="!router.url.includes('events')">
     <div class="container">
         
         <div class="widget-wrapper">
@@ -90,6 +90,6 @@
 </footer>
 <!-- ========================= footer end ========================= -->
 <!-- ========================= scroll-top ========================= -->
-<a href="#header" class="scroll-top btn-hover">
+<a href="#header" class="scroll-top btn-hover" *ngIf="!router.url.includes('events')">
 <i class="lni lni-chevron-up"></i>
 </a>

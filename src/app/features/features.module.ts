@@ -22,6 +22,7 @@ import { MtechComponent } from './academic-council/mtech/mtech.component';
 import { PhdComponent } from './academic-council/phd/phd.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ElectionTempComponent } from './archives/election-temp/election-temp.component';
+import { EventsComponent } from './events/events.component';
 
 const components=[
   DashboardComponent,
@@ -40,7 +41,8 @@ const components=[
   MtechComponent,
   PhdComponent,
   GalleryComponent,
-  ElectionTempComponent
+  ElectionTempComponent,
+  EventsComponent
 ]
 
 @NgModule({

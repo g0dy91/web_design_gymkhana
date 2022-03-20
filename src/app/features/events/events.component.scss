@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  overflow: hidden;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.banner1, .banner2, .banner3, .banner4, .banner5, .banner6{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+img{
+  width: 120%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: zoom-out 15s linear infinite;
+}
+
+@keyframes zoom-out{
+  100%{
+    width: 100%;
+  }
+}
+
+.text-box{
+  width: 600px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  color: white;
+  animation: textup 18s linear infinite;
+  transform: translateY(100px);
+}
+
+.text-box h1{
+  margin-bottom: 40px;
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+}
+
+.text-box p{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 450;
+  margin-top: 80px;
+}
+
+.text-box span{
+    background: rgb(241, 219, 241);
+    height: 2px;
+    width: 250px;
+    position: absolute;
+    left: 0;
+}
+
+.banner1{
+  animation: slide1 18s linear infinite;
+}
+.banner2{
+  animation: slide2 18s linear infinite;
+}
+.banner3{
+  animation: slide3 18s linear infinite;
+}
+.banner4{
+  animation: slide4 18s linear infinite;
+}
+.banner5{
+  animation: slide5 18s linear infinite;
+}
+.banner6{
+  animation: slide6 18s linear infinite;
+}
+
+@keyframes slide1{
+  0%{    visibility: visible;   }
+  17%{    visibility: hidden;   }
+  34%{    visibility: hidden;   }
+  51%{    visibility: hidden;   }
+  68%{    visibility: hidden;   }
+  85%{    visibility: hidden;   }
+  100%{    visibility: visible;   }
+}
+
+@keyframes slide2{
+  0%{    visibility: hidden;   }
+  17%{    visibility: hidden;   }
+  34%{    visibility: visible;   }
+  51%{    visibility: hidden;   }
+  68%{    visibility: hidden;   }
+  85%{    visibility: hidden;   }
+  100%{    visibility: hidden;   }
+}
+
+@keyframes slide3{
+  0%{    visibility: hidden;   }
+  17%{    visibility: hidden;   }
+  34%{    visibility: hidden;   }
+  51%{    visibility: visible;   }
+  68%{    visibility: hidden;   }
+  85%{    visibility: hidden;   }
+  100%{    visibility: hidden;   }
+}
+
+@keyframes slide4{
+  0%{    visibility: hidden;   }
+  17%{    visibility: hidden;   }
+  34%{    visibility: hidden;   }
+  51%{    visibility: hidden;   }
+  68%{    visibility: visible;   }
+  85%{    visibility: hidden;   }
+  100%{    visibility: hidden;   }
+}
+
+@keyframes slide5{
+  0%{    visibility: hidden;   }
+  17%{    visibility: hidden;   }
+  34%{    visibility: hidden;   }
+  51%{    visibility: hidden;   }
+  68%{    visibility: hidden;   }
+  85%{    visibility: visible;   }
+  100%{    visibility: hidden;   }
+}
+
+@keyframes slide6{
+  0%{    visibility: hidden;   }
+  17%{    visibility: hidden;   }
+  34%{    visibility: hidden;   }
+  51%{    visibility: hidden;   }
+  68%{    visibility: hidden;   }
+  85%{    visibility: hidden;   }
+  100%{    visibility: visible;   }
+}
+
+@keyframes textup{
+  10%{ transform: translateY(0px);}
+  100%{ transform: translateY(0px);}
+}
+
+.text-box1{
+  animation-delay: 0s;
+}
+.text-box2{
+  animation-delay: 3s;
+}
+.text-box3{
+  animation-delay: 6s;
+}
+.text-box4{
+  animation-delay: 9s;
+}
+.text-box5{
+  animation-delay: 12s;
+}
+.text-box6{
+  animation-delay: 15s;
+}
