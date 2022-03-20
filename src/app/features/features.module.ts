@@ -23,6 +23,7 @@ import { PhdComponent } from './academic-council/phd/phd.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ElectionTempComponent } from './archives/election-temp/election-temp.component';
 import { EventsComponent } from './events/events.component';
+import { StickyBarComponent } from './sticky-bar/sticky-bar.component';
 
 const components=[
   DashboardComponent,
@@ -42,7 +43,8 @@ const components=[
   PhdComponent,
   GalleryComponent,
   ElectionTempComponent,
-  EventsComponent
+  EventsComponent,
+  StickyBarComponent
 ]
 
 @NgModule({

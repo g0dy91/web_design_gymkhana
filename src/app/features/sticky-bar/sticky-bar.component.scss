@@ -1,0 +1,83 @@
+
+.social-links {
+    position: relative;
+    transition: 0.5s;
+    float: right;
+    background-color: #f1f1f1;
+    padding: 10px 10px;
+}
+.social-links ul{
+    margin: 0px;
+    padding: 0px;
+    bottom: 10px;
+} 
+.social-links ul li {
+    text-align: center;
+    margin: 4px 0px;
+    list-style: none;
+}
+.social-links ul li a .fa{
+    color: #fff;
+    font-size: 22px;
+    display: table;
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 50px;
+    height: 35px;
+}
+.social-links ul li a i.fa-facebook{
+    color: #475993;  
+}
+.social-links ul li a i.fa-twitter{
+    color: #55acee;
+}
+.social-links ul li a i.fa-google-plus{
+    color: #f73533;
+}
+.social-links ul li a i.fa-instagram{
+    color: #e43367;
+}
+.social-links ul li a i.fa-youtube{
+    color: #ed2124;
+}
+.social-links ul li a .fab:hover {
+    opacity: 0.8;
+}
+.social-links ul li a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+.social-share {
+    position: fixed;
+    height: 300px;
+    top: 40%;
+    right: 0px;
+}
+.share-btn.hide-links {
+    transform: rotatey(180deg);
+    position: relative;
+    right: -50px;
+}
+.share-btn.show-links {
+    transform: rotatey(0deg);
+}
+.share-btn {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    top: 4px;
+    right: 3px;
+    position: relative;
+    transition: 0.7s all ease-in;
+    color: #2196F3;
+    font-size: 25px;
+}
+.my-custom-class .tooltip-inner {
+    background-color: darkgreen;
+    font-size: 125%;
+  }
+  .my-custom-class .arrow::before {
+    border-top-color: darkgreen;
+  }
