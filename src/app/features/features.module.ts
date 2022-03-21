@@ -24,6 +24,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ElectionTempComponent } from './archives/election-temp/election-temp.component';
 import { EventsComponent } from './events/events.component';
 import { StickyBarComponent } from './sticky-bar/sticky-bar.component';
+import { CouncilsComponent } from './councils/councils.component';
 
 const components=[
   DashboardComponent,
@@ -44,7 +45,8 @@ const components=[
   GalleryComponent,
   ElectionTempComponent,
   EventsComponent,
-  StickyBarComponent
+  StickyBarComponent,
+  CouncilsComponent
 ]
 
 @NgModule({

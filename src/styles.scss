@@ -4,6 +4,14 @@
 @import "assets/styles/bootstrap-5.0.0-alpha-2.min.scss";
 @import "assets/styles/LineIcons.2.0.scss";
 @import "assets/styles/fancy.scss";
+:root {
+  --src: url(https://images.unsplash.com/photo-1554620121-59e7f3f6e3a4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy);
+  --size: 60vmin;
+  --space: 8vmin;
+  --duration: 300ms;
+  --ease-out: cubic-bezier(0.25, 1, 0.5, 1);
+  --bounce-out: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
 a{
     text-decoration: none;
 }
