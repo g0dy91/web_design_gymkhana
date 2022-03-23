@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var nav:any;
 
 @Component({
   selector: 'app-layout',
@@ -10,6 +11,7 @@ export class LayoutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    new nav()
   }
 
 }
