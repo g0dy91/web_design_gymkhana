@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-councils',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CouncilsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
+  
+  go_to_page(url:string){
+    this. router. navigate(['/'+url]);
+  }
+  goToLink(url: string){
+    window.open(url, "_blank");
+}
 
 }
