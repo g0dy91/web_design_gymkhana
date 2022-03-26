@@ -1,5 +1,21 @@
 @import "helpers/colors";
- 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+.backgroundit {
+  font-family: "Poppins";
+  // line-height: 16px;
+  // padding-bottom: 5vh;
+  .h1 {
+    font-size: 36px;
+    font-weight: 600;
+
+  }
+}
+.csssizze {
+  font-size: 6vh;
+  line-height: 13vh;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
  .card {
     width: 100%;
     max-width: 300px;

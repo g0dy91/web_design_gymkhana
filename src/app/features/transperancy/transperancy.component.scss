@@ -244,14 +244,31 @@
     }
 
       
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+.backgroundit {
+  font-family: "Poppins";
+  // line-height: 16px;
+  // padding-bottom: 5vh;
+  .h1 {
+    font-size: 36px;
+    font-weight: 600;
+
+  }
+}
+.csssizze {
+  font-size: 6vh;
+  line-height: 13vh;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
     .card2 {
-        border-radius: 25px;
         width: 100%;
         // max-width: 300px;
-        min-width: 332px;
+        width: 332px;
         height: 305px;
         background-color: rgb(0, 0, 0);
-        margin: 10px;
+        margin-left: 62px;
         // border-radius: 10px;
         // box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
         // border: 2px solid rgba(7, 7, 7, 0.12);
@@ -312,8 +329,10 @@
     
  h4{
     font-weight: 600;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 45px;
+        font-family: "Poppins";
+    
  }
 
 
