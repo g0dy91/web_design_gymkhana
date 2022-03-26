@@ -17,7 +17,4 @@ export class HeaderComponent implements OnInit {
   toTopCouncils() {
     this.scroller.scrollToAnchor("councils");
   }
-  toTop(){
-    this.scroller.scrollToAnchor("sticky-header")
-  }
 }

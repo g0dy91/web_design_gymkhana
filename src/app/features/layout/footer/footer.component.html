@@ -90,6 +90,6 @@
 </footer>
 <!-- ========================= footer end ========================= -->
 <!-- ========================= scroll-top ========================= -->
-<a href="#header" class="scroll-top btn-hover" *ngIf="!router.url.includes('events')">
+<a href="#sticky-headers" (click)="toTop()" class="scroll-top btn-hover" *ngIf="!router.url.includes('events')">
 <i class="lni lni-chevron-up"></i>
 </a>
