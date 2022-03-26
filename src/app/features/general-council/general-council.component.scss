@@ -1,35 +1,64 @@
 $tab-color: #9d0cdb;
 @import "helpers/colors";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-.backgroundit{
-  background: rgba(0, 0, 0, 0.829);
-  font-family: 'Poppins';
-  .h1{
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.backgroundit {
+  background: #010001;
+  font-family: "Poppins";
+  // line-height: 16px;
+  // padding-bottom: 5vh;
+  .h1 {
     font-size: 52px;
   }
+}
+.csssizze {
+  font-size: 13vh;
+  line-height: 13vh;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 700;
+}
+.scssit {
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 16px;
+  padding-bottom: 10vh;
+}
+@media screen and (max-width: 500px) {
+  .csssizze {
+    font-size: 8vh;
+    line-height: 8vh;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+}
+
+.h3 {
+  font-weight: 600;
 }
 .card-horizontal {
   display: flex;
   flex: 1 1 auto;
 }
-.widthit{
+.widthit {
   width: 60vw;
   margin-left: 20vw;
   margin-right: 20vw;
 }
-@media screen and (max-width:900px) {
-  .widthit{
+@media screen and (max-width: 900px) {
+  .widthit {
     width: 100vw;
-    margin:0;
+    margin: 0;
   }
 }
-h1{
+h1 {
   color: black;
 }
-*{
-  font-family: 'Poppins';
+* {
+  font-family: "Poppins";
 }
-i{
+i {
   font-family: "Font Awesome 5 Free";
 }
 .card {
@@ -95,7 +124,9 @@ i{
   height: 60px;
   text-align: center;
 }
-
+.teamit {
+  font-weight: 600;
+}
 .card .details h2 {
   margin: 0;
   padding: 0;

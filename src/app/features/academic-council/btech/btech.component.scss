@@ -1,10 +1,10 @@
 $tab-color: #9d0cdb;
 @import "helpers/colors";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-.backgroundit{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+.backgroundit {
   background: rgba(0, 0, 0, 0.829);
-  font-family: 'Poppins';
-  .h1{
+  font-family: "Poppins";
+  .h1 {
     font-size: 52px;
   }
 }
@@ -12,24 +12,26 @@ $tab-color: #9d0cdb;
   display: flex;
   flex: 1 1 auto;
 }
-.widthit{
+.widthit {
   width: 60vw;
   margin-left: 20vw;
   margin-right: 20vw;
 }
-@media screen and (max-width:900px) {
-  .widthit{
+@media screen and (max-width: 900px) {
+  .widthit {
     width: 100vw;
-    margin:0;
+    margin: 0;
   }
 }
-h1{
-  color: black;
+h1 {
+  // color: black;
+  color: #010001;
 }
-*{
-  font-family: 'Poppins';
+* {
+  font-family: "Poppins";
+  color: #010001;
 }
-i{
+i {
   font-family: "Font Awesome 5 Free";
 }
 .card {
@@ -144,7 +146,7 @@ i{
 //         border-bottom: 2px solid #753BBD;
 //         transition: color .45s ease, border .45s ease;
 //       }
-    
+
 //       h5 {
 //         color: #7c8592;
 //         text-transform: uppercase;
@@ -155,7 +157,7 @@ i{
 //         margin: 0 0 1.777777778em;
 //         transition: color .45s ease;
 //       }
-    
+
 //       p {
 //         opacity: 0;
 //         color: #FFFFFF;
@@ -165,7 +167,7 @@ i{
 //         transform: translateY(-1em);
 //         transition: opacity .45s ease, transform .5s ease;
 //       }
-      
+
 //     span{
 //         // opacity:0;
 //         // visibility: hidden;
@@ -180,22 +182,22 @@ i{
 //       &:hover {
 //         background: #753BBD;
 //         transform: scale(1.02);
-        
+
 //         h3 {
 //           color: #FFFFFF;
 //           border-bottom-color: #A754C4;
 //         }
-    
+
 //         h4 {
 //           color: #FFFFFF;
 //         }
-    
+
 //         p {
 //           opacity: 1;
 //           color: rgb(182, 186, 199);
 //           transform: none;
 //         }
-    
+
 //         span {
 //           opacity: 1;
 //           visibility: visible;
@@ -203,5 +205,5 @@ i{
 //           margin:1em;
 //         }
 //       }
-    
+
 //   }

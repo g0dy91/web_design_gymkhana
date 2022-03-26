@@ -3,7 +3,7 @@
     <div>
       <div class="container mp" id="btechCRs">
         <div class="row">
-          <div class="col-sm-6 ml-0 pl-0 mt-4 wow fadeInUp">
+          <div class="col-sm-12 ml-0 pl-0 mt-4 wow fadeInUp">
             <h3>{{ branch[0].title }}</h3>
           </div>
         </div>
@@ -15,7 +15,9 @@
           >
             <div>
               <div class="card-body" style="padding-left: 0; margin-left: 0">
-                <h6 class="card-title">{{ person.name }}</h6>
+                <h6 class="card-title" style="margin-bottom: 0">
+                  {{ person.name }}
+                </h6>
                 <a
                   href="mailto:{{ person.clgemail }}"
                   style="color: rgba(0, 0, 0, 0.863)"
