@@ -16,6 +16,15 @@
   letter-spacing: 2px;
   font-weight: 700;
 }
+@media screen and (max-width: 500px) {
+  .csssizze {
+    font-size: 8vh;
+    line-height: 8vh;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+}
  .card {
     width: 100%;
     max-width: 300px;

@@ -1,24 +1,40 @@
 <div class="container py-5">
-    <div class="row text-center">
-      <div class="col-lg-12">
-        <h1>Election Contestant</h1>
-      </div>
-    </div>
-  <div *ngFor = "let branch of election_details">
-    <div class="row text-center mb-10">
-      <div class="col-lg-12">
-        <h4>{{branch[0].title}}</h4>
-      </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-3 g-4" style="justify-content: center">
-      
-    <a style="cursor: pointer;" class="data-card text-center" *ngFor="let person of branch">
-      <h3>{{person.name | uppercase}}</h3>
-      <h6>{{person.clgemail | uppercase}}</h6>
-      <p><a href={{person.pdfurl}} download={{person.name}} style="color: rgb(0, 0, 0);">View Agenda</a></p>
-    </a>
+  <div class="row text-center">
+    <div class="col-lg-12">
+      <h1>Election Contestant</h1>
     </div>
   </div>
+  <div *ngFor="let branch of election_details">
+    <div class="row text-center mb-10">
+      <div class="col-lg-12">
+        <h4>{{ branch[0].title }}</h4>
+      </div>
     </div>
-  
-  
+    <div
+      class="row mt-5"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col" *ngFor="let person of branch">
+            <div class="justify-content-center text-center">
+              <h6>
+                {{ person.name }}
+              </h6>
+              <i
+                class="fas fa-envelope mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              >{{person.clgemail | lowercase}}
+              <br>
+              <i
+                class="fas fa-file mr-2"
+                style="color: rgba(0, 0, 0, 0.863)"
+              ></i
+              ><a href={{person.pdfurl}} download={{person.name}} style="color: rgb(0, 0, 0);">View Agenda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
