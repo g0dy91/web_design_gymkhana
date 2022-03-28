@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-sticky-bar',
@@ -7,11 +7,13 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./sticky-bar.component.scss']
 })
 export class StickyBarComponent implements OnInit {
-
+  @Input() isSocial = true; 
+  @Input() listSections:any = []; 
   constructor() { }
   clicked:boolean=true
 
   ngOnInit(): void {
+    console.log(this.isSocial)
   }
 hide(){
   if(this.clicked){
