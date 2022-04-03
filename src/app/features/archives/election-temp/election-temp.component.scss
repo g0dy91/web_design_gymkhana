@@ -1,10 +1,13 @@
 h1{
     color: rgb(0, 0, 0) ;
     font-size:clamp(1.5rem, 5vw, 3.5rem);
+    font-weight: 600;
+    letter-spacing: -1px;
   }
   h4{
     color: rgb(0, 0, 0) ;
     margin-top: 2.5rem;
+    font-weight: 700;
   }
   
   a {
@@ -103,7 +106,7 @@ h1{
   }
   h6{
 font-style: normal;
-font-weight: normal;
+font-weight: 600;
 font-size: 20px;
 line-height: 30px;
   }

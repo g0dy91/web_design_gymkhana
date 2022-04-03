@@ -335,13 +335,16 @@ export class ArchivesComponent implements OnInit {
 
   list_of_sections: any = [
     {
-      name: 'transport'
+      name: 'transport',
+      icon:'fa fa-solid fa-bus fa-2x'
     },
     {
-      name:'calender'
+      name:'calender',
+      icon:'fa fa-solid fa-calendar-days fa-2x'
     },
     {
-      name:'election'
+      name:'election',
+      icon:'fa fa-solid fa-shield-halved fa-2x'
     }
   ];
   ngOnInit(): void {}

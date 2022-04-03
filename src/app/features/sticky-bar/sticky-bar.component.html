@@ -15,7 +15,7 @@
     <div class="social-links">
       <ul *ngFor="let section of listSections">
 
-        <li  placement="left" ngbTooltip="{{section.name|uppercase}}"><a href="#{{ section.name }}"><i class="fas fa-solid fa-scroll fa-2x" aria-hidden="true"></i></a></li>
+        <li  placement="left" ngbTooltip="{{section.name|uppercase}}"><a href="#{{ section.name }}"><i class="{{section.icon}}" aria-hidden="true"></i></a></li>
       </ul>
     </div>
   </div>
