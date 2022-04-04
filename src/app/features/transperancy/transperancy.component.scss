@@ -265,10 +265,10 @@
     .card2 {
         width: 100%;
         // max-width: 300px;
-        width: 332px;
-        height: 305px;
+        max-width: 332px;
+        min-height: 305px;
         background-color: rgb(0, 0, 0);
-        margin-left: 62px;
+        // margin-left: 62px;
         // border-radius: 10px;
         // box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
         // border: 2px solid rgba(7, 7, 7, 0.12);
