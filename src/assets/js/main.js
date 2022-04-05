@@ -30,13 +30,14 @@ function stickyHeader(){
     header.classList.remove("sticky");
   }
 }
+const myArray = window.location.href.split("/");
+console.log(myArray.at(-1))
 
 li.forEach(el =>{
   el.addEventListener('click', function(){
     ul.querySelector('.active').classList.remove('active');
     el.classList.add('active');
   })
-  
 })
 
 new WOW().init();

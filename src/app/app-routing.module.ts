@@ -15,7 +15,7 @@ import { EventsComponent } from './features/events/events.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/dashboard',
+    redirectTo: '/home',
     pathMatch: 'full',
   },
   {
@@ -23,7 +23,7 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       {
-        path:'dashboard',
+        path:'home',
         component:DashboardComponent
       },
       {
@@ -47,11 +47,11 @@ const routes: Routes = [
         component: MediaCouncilComponent,
       },
       {
-        path: 'archives',
+        path: 'more',
         component: ArchivesComponent,
       },
       {
-        path: 'office-bearers',
+        path: 'officebearers',
         component: OfficeBearersComponent,
       },
       {
