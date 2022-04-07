@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
-
+  defaultImage = '../../../assets/images/gallery/200.gif';
   constructor() { }
 
   ngOnInit(): void {
