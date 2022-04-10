@@ -1,30 +1,111 @@
-<s>
-    <div class="promo" style="--overlay-color: hotpink" (click)="go_to_page('general-council')">
-      <div class="image-wrapper"><img src="../../../assets/images/councils/general.JPG" /></div>
-      <h2 class="title" data-cta="The first responders →">General</h2>
-  </div>
-  <div class="promo" style="--overlay-color: yellow" (click)="goToLink('https://scitech-iith.netlify.app/')">
-      <div class="image-wrapper"><img src="../../../assets/images/councils/sci-tech.jpg" /></div>
-      <h2 class="title" data-cta="Geeky Enough? →">Sci-Tech</h2>
-  </div>
-  <div class="promo" style="--overlay-color: dodgerblue">
-      <div class="image-wrapper"><img src="../../../assets/images/councils/culti.jpg" /></div>
-      <h2 class="title" data-cta="Explore the artist within →">Cultural</h2>
-  </div>
-  <div class="promo" style="--overlay-color: darkgreen">
-      <div class="image-wrapper"><img src="../../../assets/images/councils/sports.JPG" /></div>
-      <h2 class="title" data-cta="Chakde! →">Sports</h2>
-  </div>
-  <div class="promo" style="--overlay-color: hotpink" (click)="go_to_page('media-council')">
-    <div class="image-wrapper"><img src="../../../assets/images/councils/media.jpg" /></div>
-    <h2 class="title" data-cta="Content, content, content →">Media</h2>
-  </div>
-  <div class="promo" style="--overlay-color: yellow"(click)="go_to_page('mess-council')">
-    <div class="image-wrapper"><img src="../../../assets/images/councils/mess.jpg" /></div>
-    <h2 class="title" data-cta="Where's the salad? →">Mess</h2>
-  </div>
-  <div class="promo" style="--overlay-color: dodgerblue" (click)="go_to_page('academic-council')">
-    <div class="image-wrapper"><img src="../../../assets/images/councils/academic.jpg" /></div>
-    <h2 class="title" data-cta="Last but not the least →">Academic</h2>
-  </div>
-  </s>
+<s>  
+  <section id="councils" class="slideshow">
+
+    <ul class="navigation">
+      <!-- Mess Council -->
+      <li class="navigation-item active">
+        <span class="rotate-holder"></span>
+        <span class="background-holder" style="background-image: url(../../../assets/images/councils/mess.avif);"></span>
+      </li>
+      <!-- slideshow:navigation:item END -->
+
+      <!-- slideshow:navigation:item START -->
+      <!-- Sci-tech Council -->
+      <li class="navigation-item">
+        <span class="rotate-holder"></span>
+        <span class="background-holder" style="background-image: url(../../../assets/images/councils/Scitech.avif);"></span>
+      </li>
+      <!-- Sports Council -->
+      <li class="navigation-item">
+        <span class="rotate-holder"></span>
+        <span class="background-holder" style="background-image: url(../../../assets/images/councils/sports.jpg);"></span>
+      </li>
+      <!-- Cultural Council -->
+      <li class="navigation-item">
+        <span class="rotate-holder"></span>
+        <span class="background-holder" style="background-image: url(../../../assets/images/councils/cultural.jpg);"></span>
+      </li>
+      <!-- Media Council -->
+      <li class="navigation-item">
+        <span class="rotate-holder"></span>
+        <span class="background-holder" style="background-image: url(../../../assets/images/councils/media.avif);"></span>
+      </li>
+      <!-- Academic Council -->
+      <li class="navigation-item">
+        <span class="rotate-holder"></span>
+        <span class="background-holder" style="background-image: url(../../../assets/images/councils/academic.avif);"></span>
+      </li>
+      <!-- General Council -->
+      <li class="navigation-item">
+        <span class="rotate-holder"></span>
+        <span class="background-holder" style="background-image: url(../../../assets/images/councils/general.jpg);"></span>
+      </li>      
+
+    </ul>
+    
+    <div class="detail">
+      <!-- Mess Council -->
+      <div class="detail-item active">
+        <a routerLink="/mess-council"><div class="headline" routerLink="/mess-council">Mess</div></a>
+        <div class="background" style="background-image: url(../../../assets/images/councils/mess.avif); height: 100vh;"></div>
+        <div class="background" style="background-image: url(../../../assets/images/councils/mess.avif); height: 100vh; background-size: cover; background-position: center;"></div>
+      </div>
+      <!-- slideshow:details END -->
+      
+      <!-- slideshow:details START -->
+      <!-- Sci-tech Council -->
+      <div class="detail-item">
+        <a href="https://scitech-iith.netlify.app/"><div class="headline">SciTech</div></a>
+        <div class="background" style="background-image: url(../../../assets/images/councils/Scitech.avif);"></div>
+      </div>
+      <!-- slideshow:details END -->
+      
+      <!-- slideshow:details START -->
+      <!-- Sports Council -->
+      <div class="detail-item">
+        <a href="https://sports.iith.ac.in/"><div class="headline">Sports</div></a>
+        <div class="background" style="background-image: url(../../../assets/images/councils/sports.jpg);"></div>
+      </div>
+      <!-- slideshow:details END -->
+      
+      <!-- slideshow:details START -->
+      <!-- Cultural Council -->
+      <div class="detail-item">
+        <a href="https://gymkhana.iith.ac.in/cultural.html"><div class="headline">Cultural</div></a>
+        <div class="background" style="background-image: url(../../../assets/images/councils/cultural.jpg);"></div>
+      </div>
+      <!-- slideshow:details END -->
+      
+      <!-- slideshow:details START -->
+      <!-- Media Council -->
+      <div class="detail-item">
+        <a routerLink="/media-council"><div class="headline">Media</div></a>
+        <div class="background" style="background-image: url(../../../assets/images/councils/media.avif);"></div>
+      </div>
+      <!-- slideshow:details END -->
+      
+      <!-- slideshow:details START -->
+      <!-- Academic Council -->
+      <div class="detail-item">
+        <a routerLink="/academic-council"><div class="headline">Academic</div></a>
+        <div class="background" style="background-image: url(../../../assets/images/councils/academic.avif);"></div> 
+      </div>
+      <!-- slideshow:details END -->
+      
+      <!-- slideshow:details START -->
+      <!-- General Council -->
+      <div class="detail-item">
+        <a routerLink="/general-council"><div class="headline">General</div></a>
+        <div class="background" style="background-image: url(../../../assets/images/councils/general.jpg);"></div>
+      </div>
+      <!-- slideshow:details END -->
+      
+    </div>
+    <!-- slideshow:details END -->
+
+  </section>
+  <!-- slideshow END -->
+
+  
+
+</s>

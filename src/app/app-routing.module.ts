@@ -12,6 +12,7 @@ import { OfficeBearersComponent } from './features/office-bearers/office-bearers
 import { GalleryComponent } from './features/gallery/gallery.component';
 import { GeneralCouncilComponent } from './features/general-council/general-council.component';
 import { EventsComponent } from './features/events/events.component';
+import { CouncilsComponent } from './features/councils/councils.component';
 const routes: Routes = [
   {
     path: '',
@@ -65,6 +66,10 @@ const routes: Routes = [
       {
         path:'events',
         component: EventsComponent,
+      },
+      {
+        path:'councils',
+        component: CouncilsComponent,
       },
     ]
   },

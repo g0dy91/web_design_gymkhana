@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+declare var councils:any;
 @Component({
   selector: 'app-councils',
   templateUrl: './councils.component.html',
@@ -11,6 +11,7 @@ export class CouncilsComponent implements OnInit {
   constructor(private router:Router) { }
 
   ngOnInit(): void {
+    new councils()
   }
   
   go_to_page(url:string){
