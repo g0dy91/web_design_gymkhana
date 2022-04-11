@@ -29,6 +29,7 @@
     "jquery": "^3.6.0",
     "lodash": "^4.17.21",
     "ng-lazyload-image": "^9.1.0",
+    "ngx-ui-loader": "^11.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
