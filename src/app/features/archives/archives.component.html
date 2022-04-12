@@ -1,12 +1,17 @@
-<app-sticky-bar [isSocial] = "false" [listSections]="list_of_sections"></app-sticky-bar>
-<section id="transport" class="pricing-section pt-130 ">
+<app-sticky-bar
+  [isSocial]="false"
+  [listSections]="list_of_sections"
+></app-sticky-bar>
+<section id="transport" class="pricing-section pt-90">
   <div class="container">
     <div class="section-title mb-30">
-      <h1 class="mb-25 wow fadeInUp backgroundit csssizze" data-wow-delay=".2s">Transport Section</h1>
+      <h1 class="mb-25 wow fadeInUp backgroundit csssizze" data-wow-delay=".2s">
+        Transport Section
+      </h1>
     </div>
     <div class="row">
-      <div class="col-lg-4">
-        <div class="card">
+      <div class="col-lg-4 mx-auto">
+        <div class="card mx-auto">
           <div class="icon"><i class="fas fa-taxi fa-3x"></i></div>
           <p class="title">Cab Sharing</p>
           <a
@@ -17,10 +22,10 @@
           </a>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="card">
+      <div class="col-lg-4 mx-auto">
+        <div class="card mx-auto">
           <div class="icon"><i class="fas fa-bus-alt fa-3x"></i></div>
-          <p class="title">Transport <br>Schedules</p>
+          <p class="title">Transport <br />Schedules</p>
           <a
             class="text stretched-link"
             href="https://docs.google.com/spreadsheets/d/1mLrLAf6Z0Z4G2AsAzrK7TXJ_DZAPXb_3n6V_jKTx1wc/edit?usp=drivesdk"
@@ -28,8 +33,8 @@
           >
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="card">
+      <div class="col-lg-4 mx-auto">
+        <div class="card mx-auto">
           <div class="icon"><i class="fas fa-user-tie fa-3x"></i></div>
           <p class="title">Grievance Form</p>
           <a
@@ -46,13 +51,19 @@
 <section id="calender" class="pricing-section pt-130">
   <div class="container">
     <div class="section-title mb-20">
-      <h1 class=" wow fadeInUp csssizze" data-wow-delay=".2s">Calender Section</h1>
+      <h1 class="wow fadeInUp csssizze" data-wow-delay=".2s">
+        Calender Section
+      </h1>
     </div>
 
     <div class="row">
-      <div class="col">
+      <div class="col-lg-6 col-12">
         <div class="mb-30">
-          <h3 class="mb-25 wow fadeInUp backgroundit" style="font-weight: 600;" data-wow-delay=".2s">
+          <h3
+            class="mb-25 wow fadeInUp backgroundit"
+            style="font-weight: 600"
+            data-wow-delay=".2s"
+          >
             Student Activity Calendar
           </h3>
         </div>
@@ -65,9 +76,13 @@
           scrolling="no"
         ></iframe>
       </div>
-      <div class="col">
+      <div class="col-lg-6 col-12">
         <div class="mb-30">
-          <h3 class="mb-25 wow fadeInUp backgroundit" style="font-weight: 600;" data-wow-delay=".2s">
+          <h3
+            class="mb-25 wow fadeInUp backgroundit"
+            style="font-weight: 600"
+            data-wow-delay=".2s"
+          >
             Academic Calendar
           </h3>
         </div>
@@ -85,18 +100,62 @@
 </section>
 
 <section id="election" class="pricing-section pt-130">
-<div class="container">
-  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active btn-lg" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" >2021</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link btn-lg" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">2020</button>
-    </li>
-  </ul>
-  <div class="tab-content" id="pills-tabContent">
-    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><app-election-temp [election_details]=election_details_2021></app-election-temp></div>
-    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> <app-election-temp [election_details]=election_details_2020></app-election-temp></div>
+  <div class="container">
+    <ul
+      class="nav nav-pills mb-3 justify-content-center"
+      id="pills-tab"
+      role="tablist"
+    >
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active btn-lg"
+          id="pills-home-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-home"
+          type="button"
+          role="tab"
+          aria-controls="pills-home"
+          aria-selected="true"
+        >
+          2021
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link btn-lg"
+          id="pills-profile-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-profile"
+          type="button"
+          role="tab"
+          aria-controls="pills-profile"
+          aria-selected="false"
+        >
+          2020
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+        <app-election-temp
+          [election_details]="election_details_2021"
+        ></app-election-temp>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+        <app-election-temp
+          [election_details]="election_details_2020"
+        ></app-election-temp>
+      </div>
+    </div>
   </div>
-</div>
 </section>

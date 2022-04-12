@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(public router:Router, private scroller: ViewportScroller) { }
-
+  constructor(public router:Router, private scroller: ViewportScroller) { 
+  }
   ngOnInit(): void {
   }
   toTop(){

@@ -9,7 +9,7 @@ import { BootstrapModule } from './core/module/bootstrap.module';
 import { FeaturesModule } from './features/features.module';
 import { SharedModule } from './shared/shared.module';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
-import { NgxUiLoaderHttpConfig, NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
+import { NgxUiLoaderHttpConfig, NgxUiLoaderHttpModule, NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
 
 const ngxUiLoaderConfig: NgxUiLoaderHttpConfig = {
 };
@@ -30,11 +30,7 @@ const ngxUiLoaderConfig: NgxUiLoaderHttpConfig = {
     HttpClientModule,
     LazyLoadImageModule,
     NgxUiLoaderModule,
-    NgxUiLoaderHttpModule.forRoot(
-      {
-        showForeground:true
-      }
-    )
+    NgxUiLoaderRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent],

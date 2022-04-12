@@ -1,22 +1,48 @@
 <div class="social-share" *ngIf="isSocial">
-    <button class="share-btn" (click)="hide()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-    <div class="social-links">
-      <ul>
-        <li placement="left" ngbTooltip="Twitter"><a target="_blank" href="https://twitter.com/IITHyderabad?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-        <li placement="left" ngbTooltip="Facebook"><a target="_blank" href=" https://www.facebook.com/echoiith/"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-        <li placement="left" ngbTooltip="Youtube"><a target="_blank" href="https://www.youtube.com/channel/UCIO6qjm9EJkwrA5HdaCNI4A"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a></li>
-        <li placement="left" ngbTooltip="Instagram"><a target="_blank" href="https://www.instagram.com/iit_hyderabad/?hl=en"><i class="fab fa-instagram fa-2x" aria-hidden="true" ></i></a></li>
-      </ul>
-    </div>
+  <button class="share-btn" (click)="hide()">
+    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+  </button>
+  <div class="social-links">
+    <ul>
+      <li placement="left" ngbTooltip="Twitter">
+        <a
+          target="_blank"
+          href="https://twitter.com/IITHyderabad?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          ><i class="fab fa-twitter fa-2x" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li placement="left" ngbTooltip="Facebook">
+        <a target="_blank" href=" https://www.facebook.com/echoiith/"
+          ><i class="fab fa-facebook fa-2x" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li placement="left" ngbTooltip="Youtube">
+        <a
+          target="_blank"
+          href="https://www.youtube.com/channel/UCIO6qjm9EJkwrA5HdaCNI4A"
+          ><i class="fab fa-youtube fa-2x" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li placement="left" ngbTooltip="Instagram">
+        <a target="_blank" href="https://www.instagram.com/iit_hyderabad/?hl=en"
+          ><i class="fab fa-instagram fa-2x" aria-hidden="true"></i
+        ></a>
+      </li>
+    </ul>
   </div>
+</div>
 
-  <div class="social-share" *ngIf="!isSocial">
-    <button class="share-btn" (click)="hide()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-    <div class="social-links">
-      <ul *ngFor="let section of listSections">
-
-        <li  placement="left" ngbTooltip="{{section.name|uppercase}}"><a href="#{{ section.name }}"><i class="{{section.icon}}" aria-hidden="true"></i></a></li>
-      </ul>
-    </div>
+<div class="social-share" *ngIf="!isSocial" style="z-index: 100">
+  <button class="share-btn" (click)="hide()">
+    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+  </button>
+  <div class="social-links">
+    <ul *ngFor="let section of listSections">
+      <li placement="left" ngbTooltip="{{ section.name | uppercase }}">
+        <a href="#{{ section.name }}"
+          ><i class="{{ section.icon }}" aria-hidden="true"></i
+        ></a>
+      </li>
+    </ul>
   </div>
-
+</div>
