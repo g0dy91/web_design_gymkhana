@@ -232,7 +232,7 @@
             right: auto;
             left: -39px;
             top: 32px;
-            border-right: 18px solid #b333c4;
+            border-right: 18px solid rgb(0, 0, 0);
             border-left: inherit;
         }
         .timeline.animated .timeline-row:nth-child(odd) .timeline-content {
@@ -257,8 +257,8 @@
 }
 .csssizze {
   font-size: 6vh;
-  line-height: 13vh;
-  letter-spacing: 2px;
+//   line-height: 13vh;
+//   letter-spacing: 2px;
   font-weight: 700;
 }
 
