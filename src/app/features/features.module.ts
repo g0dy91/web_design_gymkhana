@@ -25,6 +25,9 @@ import { ElectionTempComponent } from './archives/election-temp/election-temp.co
 import { EventsComponent } from './events/events.component';
 import { StickyBarComponent } from './sticky-bar/sticky-bar.component';
 import { CouncilsComponent } from './councils/councils.component';
+import { OfficeBearers2021Component } from './office-bearers/office-bearers2021/office-bearers2021.component';
+import { OfficeBearers2020Component } from './office-bearers/office-bearers2020/office-bearers2020.component';
+import { OfficeBearers2019Component } from './office-bearers/office-bearers2019/office-bearers2019.component';
 
 const components=[
   DashboardComponent,
@@ -46,7 +49,10 @@ const components=[
   ElectionTempComponent,
   EventsComponent,
   StickyBarComponent,
-  CouncilsComponent
+  CouncilsComponent,
+  OfficeBearers2021Component,
+  OfficeBearers2020Component,
+  OfficeBearers2019Component
 ]
 
 @NgModule({

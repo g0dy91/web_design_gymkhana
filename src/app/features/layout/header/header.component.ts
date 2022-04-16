@@ -37,7 +37,7 @@ isLoaded:boolean=false
         this.id = 5;
         break;
       }
-      case 'officebearers':{
+      case 'officebearers'||'officebearers2021'||'officebearers2020'||'officebearers2019':{
         this.id = 6;
         break;
       }

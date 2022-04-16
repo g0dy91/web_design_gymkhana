@@ -13,6 +13,9 @@ import { GalleryComponent } from './features/gallery/gallery.component';
 import { GeneralCouncilComponent } from './features/general-council/general-council.component';
 import { EventsComponent } from './features/events/events.component';
 import { CouncilsComponent } from './features/councils/councils.component';
+import { OfficeBearers2021Component } from './features/office-bearers/office-bearers2021/office-bearers2021.component';
+import { OfficeBearers2020Component } from './features/office-bearers/office-bearers2020/office-bearers2020.component';
+import { OfficeBearers2019Component } from './features/office-bearers/office-bearers2019/office-bearers2019.component';
 const routes: Routes = [
   {
     path: '',
@@ -70,6 +73,18 @@ const routes: Routes = [
       {
         path:'councils',
         component: CouncilsComponent,
+      },
+      {
+        path:'officebearers2021',
+        component: OfficeBearers2021Component,
+      },
+      {
+        path:'officebearers2020',
+        component: OfficeBearers2020Component,
+      },
+      {
+        path:'officebearers2019',
+        component: OfficeBearers2019Component,
       },
     ]
   },
