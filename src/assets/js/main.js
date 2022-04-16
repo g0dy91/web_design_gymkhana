@@ -1,26 +1,12 @@
 
 
 function nav(){
-    const primaryNav = document.querySelector('.primary-navigation');
-const navToggle = document.querySelector('.mobile-nav-toggle');
 
 var header = document.getElementById("sticky-header");
 var sticky = header.offsetTop;
 
 let ul = document.querySelector('.primary-navigation');
 let li = document.querySelectorAll('li');
-
-navToggle.addEventListener('click', () => {
-  const visibility = primaryNav.getAttribute("data-visible");
-  
-  if(visibility === "false"){
-    primaryNav.setAttribute("data-visible", true);
-    navToggle.setAttribute("aria-expanded", true);
-  } else if(visibility === "true"){
-    primaryNav.setAttribute("data-visible", false);
-    navToggle.setAttribute("aria-expanded", false);
-  }
-})
 
 window.onscroll = function(){stickyHeader()};
 function stickyHeader(){
@@ -30,15 +16,6 @@ function stickyHeader(){
     header.classList.remove("sticky");
   }
 }
-const myArray = window.location.href.split("/");
-console.log(myArray.at(-1))
-
-li.forEach(el =>{
-  el.addEventListener('click', function(){
-    ul.querySelector('.active').classList.remove('active');
-    el.classList.add('active');
-  })
-})
 
 new WOW().init();
 

@@ -13,6 +13,7 @@
     class="mobile-nav-toggle"
     aria-controls="primary-navigation"
     aria-expanded="false"
+    (click)="mb()"
   >
     <span class="sr-only"></span>
   </button>
@@ -23,31 +24,30 @@
       data-visible="false"
       class="primary-navigation flex"
     >
-      <li id="nav-li" class="active">
-        <a href="#" routerLink="/home">Home</a>
+      <li id="nav-li-home"  [ngClass]="{'active': id === 1 }">
+        <a routerLink="/home" (click)="setId(1)">Home</a>
       </li>
-      <li id="nav-li" class="">
-        <a href="#councils" routerLink="/councils" (click)="toTopCouncils()"
-          >Councils</a
+      <li id="nav-li-councils" [ngClass]="{'active': id === 2 }">
+        <a routerLink="/councils" (click)="setId(2)">Councils</a
         >
       </li>
-      <li id="nav-li" class="">
-        <a href="#" routerLink="/events">Events</a>
+      <li id="nav-li-events" [ngClass]="{'active': id === 3 }">
+        <a  routerLink="/events" (click)="setId(3)">Events</a>
       </li>
-      <li id="nav-li" class="">
-        <a routerLink="gallery">Gallery</a>
+      <li id="nav-li-gallery" [ngClass]="{'active': id === 4 }">
+        <a routerLink="gallery" (click)="setId(4)">Gallery</a>
       </li>
       <li id="nav-li" class="">
         <a href="https://gymkhana.iith.ac.in/milan">Milan</a>
       </li>
-      <li id="nav-li" class="">
-        <a routerLink="transperancy">Transparency</a>
+      <li id="nav-li-transperancy" [ngClass]="{'active': id === 5}">
+        <a routerLink="transperancy" (click)="setId(5)">Transparency</a>
       </li>
-      <li id="nav-li" class="">
-        <a href="#" routerLink="/officebearers">Office Bearers</a>
+      <li id="nav-li-officebearers" [ngClass]="{'active': id === 6}">
+        <a routerLink="/officebearers" (click)="setId(6)">Office Bearers</a>
       </li>
-      <li id="nav-li" class="">
-        <a href="#" routerLink="/more">More</a>
+      <li id="nav-li-more" [ngClass]="{'active': id === 7 }">
+        <a routerLink="/more" (click)="setId(7)">More</a>
       </li>
     </ul>
   </nav>
