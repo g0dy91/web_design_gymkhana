@@ -16,6 +16,8 @@ import { CouncilsComponent } from './features/councils/councils.component';
 import { OfficeBearers2021Component } from './features/office-bearers/office-bearers2021/office-bearers2021.component';
 import { OfficeBearers2020Component } from './features/office-bearers/office-bearers2020/office-bearers2020.component';
 import { OfficeBearers2019Component } from './features/office-bearers/office-bearers2019/office-bearers2019.component';
+import { OfficeBearers2018Component } from './features/office-bearers/office-bearers2018/office-bearers2018.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -85,6 +87,10 @@ const routes: Routes = [
       {
         path:'officebearers2019',
         component: OfficeBearers2019Component,
+      },
+      {
+        path:'officebearers2018',
+        component: OfficeBearers2018Component,
       },
     ]
   },

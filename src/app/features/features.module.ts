@@ -28,6 +28,7 @@ import { CouncilsComponent } from './councils/councils.component';
 import { OfficeBearers2021Component } from './office-bearers/office-bearers2021/office-bearers2021.component';
 import { OfficeBearers2020Component } from './office-bearers/office-bearers2020/office-bearers2020.component';
 import { OfficeBearers2019Component } from './office-bearers/office-bearers2019/office-bearers2019.component';
+import { OfficeBearers2018Component } from './office-bearers/office-bearers2018/office-bearers2018.component';
 
 const components=[
   DashboardComponent,
@@ -52,7 +53,8 @@ const components=[
   CouncilsComponent,
   OfficeBearers2021Component,
   OfficeBearers2020Component,
-  OfficeBearers2019Component
+  OfficeBearers2019Component,
+  OfficeBearers2018Component
 ]
 
 @NgModule({
